@@ -140,5 +140,9 @@ set Price = Price*1.10;
 insert into Orders(OrderID,CustomerID,TotalAmount) values
 (11,11,799.99);
 
+--Q7 Write an SQL query to update the contact information (e.g., email and address) of a specific customer in the "Customers" table. Allow users to input the customer ID and new contact information.
+Update Customers
+set Email = 'ron07@gmail.com' , [Address] = 'Ottery,St.Catchpole ,England'
+where CustomerID = 2;
 
 select * from Orders
