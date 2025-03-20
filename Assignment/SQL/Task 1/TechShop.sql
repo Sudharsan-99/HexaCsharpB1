@@ -3,7 +3,7 @@
 Create Database TechShop;
 use TechShop;
 
-Create Table Customers(
+Create table Customers(
 CustomerID int identity(1,1) Primary key,
 FirstName varchar(30) not null,
 LastName varchar(30),
@@ -12,7 +12,7 @@ Phone varchar (15) unique not null,
 [Address] Text not null,
 );
 
-Create Table Products(
+Create table Products(
 ProductID int identity(1,1) primary key,
 ProductName varchar(30) not null,
 [Description] Text ,
