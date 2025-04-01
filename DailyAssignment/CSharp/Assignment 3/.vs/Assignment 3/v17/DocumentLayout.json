@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\Assignment 3\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{252BAC28-08D1-4E73-B702-F4EABBC2D64B}|Exceptions\\Exceptions.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\assignment 3\\exceptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{252BAC28-08D1-4E73-B702-F4EABBC2D64B}|Exceptions\\Exceptions.csproj|solutionrelative:exceptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{252BAC28-08D1-4E73-B702-F4EABBC2D64B}|Exceptions\\Exceptions.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\assignment 3\\exceptions\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{252BAC28-08D1-4E73-B702-F4EABBC2D64B}|Exceptions\\Exceptions.csproj|solutionrelative:exceptions\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{252BAC28-08D1-4E73-B702-F4EABBC2D64B}|Exceptions\\Exceptions.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\assignment 3\\exceptions\\zeroexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{252BAC28-08D1-4E73-B702-F4EABBC2D64B}|Exceptions\\Exceptions.csproj|solutionrelative:exceptions\\zeroexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BankAccount.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\Assignment 3\\Exceptions\\BankAccount.cs",
+              "RelativeDocumentMoniker": "Exceptions\\BankAccount.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\Assignment 3\\Exceptions\\BankAccount.cs",
+              "RelativeToolTip": "Exceptions\\BankAccount.cs",
+              "ViewState": "AgIAAA0AAABAYmZmZmYswAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T17:39:35.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ZeroException.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\Assignment 3\\Exceptions\\ZeroException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\ZeroException.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\Assignment 3\\Exceptions\\ZeroException.cs",
+              "RelativeToolTip": "Exceptions\\ZeroException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T17:38:18.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\Assignment 3\\Exceptions\\Program.cs",
+              "RelativeDocumentMoniker": "Exceptions\\Program.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\Assignment 3\\Exceptions\\Program.cs",
+              "RelativeToolTip": "Exceptions\\Program.cs",
+              "ViewState": "AgIAAAgAAACgl5mZmZktwBEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T17:37:28.756Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
