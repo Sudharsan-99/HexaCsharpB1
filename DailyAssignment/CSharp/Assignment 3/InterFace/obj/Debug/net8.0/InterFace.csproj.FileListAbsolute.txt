@@ -1,0 +1,14 @@
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\bin\Debug\net8.0\InterFace.exe
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\bin\Debug\net8.0\InterFace.deps.json
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\bin\Debug\net8.0\InterFace.runtimeconfig.json
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\bin\Debug\net8.0\InterFace.dll
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\bin\Debug\net8.0\InterFace.pdb
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\InterFace.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\InterFace.AssemblyInfoInputs.cache
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\InterFace.AssemblyInfo.cs
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\InterFace.csproj.CoreCompileInputs.cache
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\InterFace.dll
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\refint\InterFace.dll
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\InterFace.pdb
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\InterFace.genruntimeconfig.cache
+C:\Users\test\OneDrive\Desktop\Csharp\Assignment 3\InterFace\obj\Debug\net8.0\ref\InterFace.dll
