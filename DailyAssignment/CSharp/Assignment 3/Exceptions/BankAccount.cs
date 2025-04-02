@@ -11,19 +11,23 @@ namespace Exceptions
         public string AccountHolder;
         public double Balance;
 
-        // Constructor
         public BankAccount(string accountHolder, double initialBalance)
         {
-            AccountHolder = accountHolder;
-            Balance = initialBalance;
+            this.AccountHolder = accountHolder;
+            this.Balance = initialBalance;
         }
 
-        // Method to Transfer Funds
+        
         public void TransferFunds(double amount)
         {
             if (amount > Balance)
             {
                 throw new ZeroException("Transaction Failed: Insufficient Funds!");
+            }
+
+            if(amount <= 0)
+            {
+                throw new ZeroException("Transaction Failed : Please enter amount Greater than zero ");
             }
 
             Balance -= amount;
