@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\TechShop.csproj",
+      "projectUniqueName": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\TechShop.csproj",
       "projectName": "TechShop",
-      "projectPath": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\TechShop.csproj",
+      "projectPath": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\TechShop.csproj",
       "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\obj\\",
+      "outputPath": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

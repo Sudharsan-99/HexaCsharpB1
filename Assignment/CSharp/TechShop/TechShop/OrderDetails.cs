@@ -58,6 +58,8 @@ namespace TechShop
             Quantity = quantity;
             DiscountPercentage = 0; // optional default
         }
+
+        public OrderDetails() { }
         //Methods
         public double CalculateSubtotal()
         {
@@ -74,8 +76,8 @@ namespace TechShop
             return $"OrderDetail ID: {OrderDetailID}\n" +
                    $"Product: {Product.ProductName}\n" +
                    $"Quantity: {Quantity}\n" +
-                   $"Price per unit: {Product.Price:C}\n" +
-                   $"Subtotal: {CalculateSubtotal():C}";
+                   $"Price per unit: ${Product.Price}\n" +
+                   $"Subtotal: ${CalculateSubtotal()}";
         }
 
         public void UpdateQuantity(int newQuantity)

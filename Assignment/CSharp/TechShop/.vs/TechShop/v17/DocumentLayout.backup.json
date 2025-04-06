@@ -1,34 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\",
+  "WorkspaceRootPath": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\techshop\\techshop\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\collections\\om_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\collections\\om_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\techshop\\techshop\\exceptions\\invaliddataexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\exceptions\\invaliddataexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\collections\\pm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\collections\\pm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\techshop\\techshop\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\techshop\\techshop\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\techshop\\techshop\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\techshop\\techshop\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\csharp\\techshop\\techshop\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\collections\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\collections\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InValidDataException.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Exceptions\\InValidDataException.cs",
-              "RelativeDocumentMoniker": "TechShop\\Exceptions\\InValidDataException.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Exceptions\\InValidDataException.cs",
-              "RelativeToolTip": "TechShop\\Exceptions\\InValidDataException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:32:06.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MAIN.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\MAIN.cs",
-              "RelativeDocumentMoniker": "TechShop\\MAIN.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\MAIN.cs*",
-              "RelativeToolTip": "TechShop\\MAIN.cs*",
-              "ViewState": "AgIAAAAAAACAzMzMzMwgwEcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:08:19.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderDetails.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\OrderDetails.cs",
-              "RelativeDocumentMoniker": "TechShop\\OrderDetails.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\OrderDetails.cs",
-              "RelativeToolTip": "TechShop\\OrderDetails.cs",
-              "ViewState": "AgIAABEAAABAl5mZmVknwA4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:07:21.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Products.cs",
-              "RelativeDocumentMoniker": "TechShop\\Products.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Products.cs",
-              "RelativeToolTip": "TechShop\\Products.cs",
-              "ViewState": "AgIAABkAAABAZWZmZmYowDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:06:39.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Customers.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Customers.cs",
-              "RelativeDocumentMoniker": "TechShop\\Customers.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Customers.cs*",
-              "RelativeToolTip": "TechShop\\Customers.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Orders.cs",
+              "RelativeDocumentMoniker": "TechShop\\Orders.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Orders.cs*",
+              "RelativeToolTip": "TechShop\\Orders.cs*",
+              "ViewState": "AgIAAAwAAABAmJmZmZkdwBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:04:29.538Z",
+              "WhenOpened": "2025-04-06T18:25:06.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Orders.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Orders.cs",
-              "RelativeDocumentMoniker": "TechShop\\Orders.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Orders.cs",
-              "RelativeToolTip": "TechShop\\Orders.cs",
-              "ViewState": "AgIAADIAAADAzMzMzMwswA4AAAAkAAAAAAAAAA==",
+              "Title": "OrderManager.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Collections\\OrderManager.cs",
+              "RelativeDocumentMoniker": "TechShop\\Collections\\OrderManager.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Collections\\OrderManager.cs",
+              "RelativeToolTip": "TechShop\\Collections\\OrderManager.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAQwL8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:02:40.655Z",
+              "WhenOpened": "2025-04-06T18:16:29.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Inventory.cs",
-              "RelativeDocumentMoniker": "TechShop\\Inventory.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\Csharp\\TechShop\\TechShop\\Inventory.cs",
-              "RelativeToolTip": "TechShop\\Inventory.cs",
-              "ViewState": "AgIAAFcAAAAAV2ZmZmYOwF4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "OM_MAIN.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Collections\\OM_MAIN.cs",
+              "RelativeDocumentMoniker": "TechShop\\Collections\\OM_MAIN.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Collections\\OM_MAIN.cs*",
+              "RelativeToolTip": "TechShop\\Collections\\OM_MAIN.cs*",
+              "ViewState": "AgIAAFcAAABAgpmZmZkKwEgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T05:25:14.255Z",
+              "WhenOpened": "2025-04-06T18:16:21.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PM_MAIN.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Collections\\PM_MAIN.cs",
+              "RelativeDocumentMoniker": "TechShop\\Collections\\PM_MAIN.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Collections\\PM_MAIN.cs*",
+              "RelativeToolTip": "TechShop\\Collections\\PM_MAIN.cs*",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:12:31.654Z",
               "EditorCaption": ""
             }
           ]

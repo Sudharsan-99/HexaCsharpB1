@@ -16,7 +16,7 @@ namespace TechShop
         private double _Price;
 
 
-
+        public Products() { }
         //Properties with Encapsulation
         public int ProductID
         {

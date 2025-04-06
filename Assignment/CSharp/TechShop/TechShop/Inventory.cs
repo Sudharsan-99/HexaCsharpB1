@@ -111,7 +111,7 @@ namespace TechShop
                 Console.WriteLine($"Price        : {item.Product.Price:C}");
                 Console.WriteLine($"Quantity     : {item.QuantityInStock}");
                 Console.WriteLine($"Last Updated : {item.LastStockUpdate}");
-                Console.WriteLine(new string('-', 40));
+                Console.WriteLine("------------------------");
             }
         }
     }

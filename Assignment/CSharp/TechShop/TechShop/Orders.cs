@@ -19,7 +19,7 @@ namespace TechShop
 
         //Public Properties with Encapsulation
 
-        public List<OrderDetails> OrderDetails { get { return _orderDetails; } }
+        public List<OrderDetails> OrderDetails { get { return _orderDetails; } set { _orderDetails = value; } }
         public int OrderId
         {
             get { return _OrderId; }
@@ -52,6 +52,8 @@ namespace TechShop
 
 
         //Constructor
+
+        public Orders() { }
         public Orders(int orderId, Customers customer, DateTime orderDate)
         {
             _OrderId = orderId;
@@ -81,7 +83,7 @@ namespace TechShop
             {
                 Console.WriteLine(item.GetOrderDetailInfo());
             }
-            Console.WriteLine($"Total: ₹{TotalAmount}");
+            Console.WriteLine($"Total: ${TotalAmount}");
         }
 
         public void CancelOrder()
