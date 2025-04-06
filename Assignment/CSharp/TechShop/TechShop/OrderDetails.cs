@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechShop.Exceptions;
 
 namespace TechShop
 {
@@ -46,6 +47,11 @@ namespace TechShop
         //COnstructor
         public OrderDetails(int orderDetailId, Orders order, Products product, int quantity)
         {
+            if (product == null)
+            {
+                throw new IncompleteOrderException("Order detail must have a valid product reference.");
+            }
+
             OrderDetailID = orderDetailId;
             Order = order;
             Product = product;

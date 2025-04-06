@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechShop.Exceptions;
 
 namespace TechShop
 {
@@ -72,7 +73,11 @@ namespace TechShop
         public void RemoveFromInventory(int quantity)
         {
             if (quantity > QuantityInStock)
-                throw new InvalidOperationException("Insufficient stock to remove.");
+            {
+                throw new InsufficientStockException(
+                    $"Requested quantity ({quantity}) exceeds available stock ({QuantityInStock}).");
+            }
+
             QuantityInStock -= quantity;
         }
 

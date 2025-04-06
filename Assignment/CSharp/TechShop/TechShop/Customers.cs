@@ -55,6 +55,15 @@ namespace TechShop
 
         public Customers(int CustomerID, string FirstName, string LastName, string Email, string Phone, string Address)
         {
+            if (!isValidEmail(Email)) 
+            {
+                throw new InvalidDataException("Invalid Email Please Enter a Valid Email");
+            }
+
+            if (!isValidPhone(Phone))
+            {
+                throw new InvalidDataException("Invalid PhoneNumber Please Enter a Valid Number");
+            }
             this._CustomerId = CustomerID;
             this.FirstName = FirstName;
             this.LastName = LastName;
@@ -86,6 +95,42 @@ namespace TechShop
             return _orders.Count;
         }
 
-       
+
+        private bool isValidEmail(string email)
+        {
+            if (!email.Contains("@"))
+            {
+                return false;
+            }
+
+            if (email[0] == '@')
+            {
+                return false;
+            }
+
+            if (email[email.Length - 1] == '@')
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool isValidPhone(string phone) 
+        {
+            if (!(phone.Length == 10))
+            {
+                return false;
+            }
+            foreach (char c in phone)
+            {
+                if (!char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
     }
 }
