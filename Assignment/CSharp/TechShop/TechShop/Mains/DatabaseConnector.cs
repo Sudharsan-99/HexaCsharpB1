@@ -17,7 +17,7 @@ namespace TechShop.Mains
 {
     public class DatabaseConnector
     {
-        public static SqlConnection con ;
+        public static SqlConnection con;
         public static SqlCommand cmd;
         public static SqlDataReader dr;
 
@@ -30,7 +30,7 @@ namespace TechShop.Mains
         static void Main(string[] args)
         {
             bool running = true;
-            while (running) 
+            while (running)
             {
                 Console.WriteLine("DataBase Connectivity Related Methods");
                 Console.WriteLine("1.(TASK 1)add Customer ");
@@ -100,7 +100,7 @@ namespace TechShop.Mains
 
             }
         }
-       
+
     }
-   
+
 }

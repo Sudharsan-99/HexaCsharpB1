@@ -180,57 +180,57 @@ namespace TechShop
             return true;
         }
 
-        //static void Main(string[] args)
-        //{
-        //    // Create a sample customer
-        //    Customers customer = new Customers(1, "Sudharsan", "M", "sudharsan@gmail.com", "7604875003", "Kolathur, Chennai");
+        static void Main(string[] args)
+        {
+            // Create a sample customer
+            Customers customer = new Customers(1, "Sudharsan", "M", "sudharsan@gmail.com", "7604875003", "Kolathur, Chennai");
 
-        //    bool exit = false;
+            bool exit = false;
 
-        //    while (!exit)
-        //    {
-        //        Console.WriteLine("\n=== CUSTOMER METHOD MENU ===");
-        //        Console.WriteLine("1. View Customer Details");
-        //        Console.WriteLine("2. Update Customer Info");
-        //        Console.WriteLine("3. View Total Orders");
-        //        Console.WriteLine("4. Exit");
-        //        Console.Write("Enter your choice: ");
+            while (!exit)
+            {
+                Console.WriteLine("\n=== CUSTOMER METHOD MENU ===");
+                Console.WriteLine("1. View Customer Details");
+                Console.WriteLine("2. Update Customer Info");
+                Console.WriteLine("3. View Total Orders");
+                Console.WriteLine("4. Exit");
+                Console.Write("Enter your choice: ");
 
-        //        string input = Console.ReadLine();
+                string input = Console.ReadLine();
 
-        //        switch (input)
-        //        {
-        //            case "1":
-        //                customer.GetCustomerDetails();
-        //                break;
+                switch (input)
+                {
+                    case "1":
+                        customer.GetCustomerDetails();
+                        break;
 
-        //            case "2":
-        //                try
-        //                {
-        //                    customer.UpdateCustomerInfo();
-        //                }
-        //                catch (Exception ex)
-        //                {
-        //                    Console.WriteLine("Error: " + ex.Message);
-        //                }
-        //                break;
+                    case "2":
+                        try
+                        {
+                            customer.UpdateCustomerInfo();
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error: " + ex.Message);
+                        }
+                        break;
 
-        //            case "3":
-        //                int total = customer.CalculateTotalOrders();
-        //                Console.WriteLine($"Total Orders: {total}");
-        //                break;
+                    case "3":
+                        int total = customer.CalculateTotalOrders();
+                        Console.WriteLine($"Total Orders: {total}");
+                        break;
 
-        //            case "4":
-        //                exit = true;
-        //                Console.WriteLine("Exiting...");
-        //                break;
+                    case "4":
+                        exit = true;
+                        Console.WriteLine("Exiting...");
+                        break;
 
-        //            default:
-        //                Console.WriteLine(" Invalid choice. Please try again.");
-        //                break;
-        //        }
-        //    }
-        //}
+                    default:
+                        Console.WriteLine(" Invalid choice. Please try again.");
+                        break;
+                }
+            }
+        }
     }
 
 }

@@ -84,6 +84,11 @@ namespace TechShop
 
         public bool ProcessPayment(Orders order)
         {
+            if (order.TotalAmount <= 0)
+            {
+                throw new PaymentFailedException("Cannot process payment for zero or negative amount.");
+            }
+
             int paymentId = _payments.Count + 1;
             Payment payment = new Payment(paymentId, order, (double)order.TotalAmount, "Completed", DateTime.Now);
             _payments.Add(payment);
@@ -91,6 +96,7 @@ namespace TechShop
             Console.WriteLine($"Payment of ₹{order.TotalAmount} processed successfully for Order #{order.OrderId}.");
             return true;
         }
+
 
 
     }

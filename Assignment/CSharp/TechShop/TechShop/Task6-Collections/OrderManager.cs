@@ -181,7 +181,7 @@ namespace TechShop.Collections
                 Console.WriteLine($"Order ID: {order.OrderId}, Date: {order.OrderDate}, Status: {order.OrderStatus}");
                 foreach (OrderDetails detail in order.OrderDetails)
                 {
-                    Console.WriteLine($"  - Product: {detail.Product.ProductName}, Qty: {detail.Quantity}, Price: ₹{detail.Product.Price}");
+                    Console.WriteLine($"  - Product: {detail.Product.ProductName}, Qty: {detail.Quantity}, Price: ${detail.Product.Price}");
                 }
             }
         }

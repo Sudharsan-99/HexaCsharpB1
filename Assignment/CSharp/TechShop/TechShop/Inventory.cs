@@ -74,6 +74,13 @@ namespace TechShop
             LastStockUpdate = DateTime.Now;
         }
 
+        public Inventory(Products product, int quantity, DateTime LastStockUpdate)
+        {
+            Product = product;
+            QuantityInStock = quantity;
+            this.LastStockUpdate = LastStockUpdate;
+        }
+
         // Methods
 
         public Products GetProduct()
@@ -184,7 +191,7 @@ namespace TechShop
                 Console.WriteLine("------------------------");
             }
         }
-        /*
+        
         static void Main(string[] args)
         {
             List<Inventory> inventoryList = new List<Inventory>();
@@ -334,6 +341,6 @@ namespace TechShop
                         break;
                 }
             }
-        } */
+        } 
     }
 }

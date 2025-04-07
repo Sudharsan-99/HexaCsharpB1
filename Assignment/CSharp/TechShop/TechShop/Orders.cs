@@ -100,6 +100,19 @@ namespace TechShop
             _OrderDate = orderDate;
             _OrderStatus = "Pending";
         }
+
+        public Orders(int orderId, DateTime orderDate,string orderStatus,List<OrderDetails> orderDetails,decimal totalAmount)
+        {
+            OrderId= orderId;
+            OrderDate= orderDate;
+            OrderStatus= orderStatus;
+            OrderDetails= orderDetails;
+            TotalAmount= totalAmount;
+        }
+            
+
+
+
         //Methods
         public void CalculateTotalAmount()
         {
@@ -144,71 +157,71 @@ namespace TechShop
             Console.WriteLine($"Order status updated to: {OrderStatus}");
         }
 
-        //static void Main(string[] args)
-        //{
-        //    Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
-        //    Products laptop = new Products(1001, "Laptop", "Gaming Laptop", 1200.50, 10);
-        //    Products mouse = new Products(1002, "Wireless Mouse", "Bluetooth mouse", 25.99, 30);
+        static void Main(string[] args)
+        {
+            Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
+            Products laptop = new Products(1001, "Laptop", "Gaming Laptop", 1200.50, 10);
+            Products mouse = new Products(1002, "Wireless Mouse", "Bluetooth mouse", 25.99, 30);
 
-        //    Orders order = new Orders(1, customer, DateTime.Now);
+            Orders order = new Orders(1, customer, DateTime.Now);
 
-        //    OrderDetails detail1 = new OrderDetails(1, order, laptop, 1);
-        //    OrderDetails detail2 = new OrderDetails(2, order, mouse, 2);
+            OrderDetails detail1 = new OrderDetails(1, order, laptop, 1);
+            OrderDetails detail2 = new OrderDetails(2, order, mouse, 2);
 
-        //    order.OrderDetails.Add(detail1);
-        //    order.OrderDetails.Add(detail2);
+            order.OrderDetails.Add(detail1);
+            order.OrderDetails.Add(detail2);
 
-        //    bool exit = false;
+            bool exit = false;
 
-        //    while (!exit)
-        //    {
-        //        Console.WriteLine("\n=== ORDER MENU ===");
-        //        Console.WriteLine("1. View Order Details");
-        //        Console.WriteLine("2. Calculate Total Amount");
-        //        Console.WriteLine("3. Update Order Status");
-        //        Console.WriteLine("4. Cancel Order");
-        //        Console.WriteLine("5. Exit");
-        //        Console.Write("Enter your choice: ");
-        //        string choice = Console.ReadLine();
+            while (!exit)
+            {
+                Console.WriteLine("\n=== ORDER MENU ===");
+                Console.WriteLine("1. View Order Details");
+                Console.WriteLine("2. Calculate Total Amount");
+                Console.WriteLine("3. Update Order Status");
+                Console.WriteLine("4. Cancel Order");
+                Console.WriteLine("5. Exit");
+                Console.Write("Enter your choice: ");
+                string choice = Console.ReadLine();
 
-        //        switch (choice)
-        //        {
-        //            case "1":
-        //                order.GetOrderDetails();
-        //                break;
+                switch (choice)
+                {
+                    case "1":
+                        order.GetOrderDetails();
+                        break;
 
-        //            case "2":
-        //                order.CalculateTotalAmount();
-        //                Console.WriteLine("Total amount calculated.");
-        //                break;
+                    case "2":
+                        order.CalculateTotalAmount();
+                        Console.WriteLine("Total amount calculated.");
+                        break;
 
-        //            case "3":
-        //                Console.WriteLine("Enter new order status (Pending, Confirmed, Shipped, Delivered, Cancelled): ");
-        //                string status = Console.ReadLine();
-        //                try
-        //                {
-        //                    order.UpdateOrderStatus(status);
-        //                }
-        //                catch (InvalidDataException ex)
-        //                {
-        //                    Console.WriteLine("Error: " + ex.Message);
-        //                }
-        //                break;
+                    case "3":
+                        Console.WriteLine("Enter new order status (Pending, Confirmed, Shipped, Delivered, Cancelled): ");
+                        string status = Console.ReadLine();
+                        try
+                        {
+                            order.UpdateOrderStatus(status);
+                        }
+                        catch (InvalidDataException ex)
+                        {
+                            Console.WriteLine("Error: " + ex.Message);
+                        }
+                        break;
 
-        //            case "4":
-        //                order.CancelOrder();
-        //                break;
+                    case "4":
+                        order.CancelOrder();
+                        break;
 
-        //            case "5":
-        //                exit = true;
-        //                Console.WriteLine("Exiting...");
-        //                break;
+                    case "5":
+                        exit = true;
+                        Console.WriteLine("Exiting...");
+                        break;
 
-        //            default:
-        //                Console.WriteLine("Invalid choice. Please try again.");
-        //                break;
-        //        }
-        //    }
-        //}
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+            }
+        }
     }
 }

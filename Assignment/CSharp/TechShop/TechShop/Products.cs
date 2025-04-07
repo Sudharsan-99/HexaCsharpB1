@@ -78,6 +78,13 @@ namespace TechShop
             this.StockInQuantity = StockInQuantity;
         }
 
+        public Products(int ProductId,string productName,int productPrice)
+        {
+            this.ProductID = ProductId;
+            this.ProductName = productName;
+            this.Price= productPrice;
+        }
+
         //Methods
         public string GetProductDetails()
         {
@@ -94,111 +101,111 @@ namespace TechShop
             return this.StockInQuantity > 0;
         }
 
-        //static void Main(string[] args)
-        //{
-        //    Products product = null;
-        //    bool exit = false;
+        static void Main(string[] args)
+        {
+            Products product = null;
+            bool exit = false;
 
-        //    while (!exit)
-        //    {
-        //        Console.WriteLine("\n=== PRODUCT MENU ===");
-        //        Console.WriteLine("1. Add Product");
-        //        Console.WriteLine("2. View Product Details");
-        //        Console.WriteLine("3. Update Product Info");
-        //        Console.WriteLine("4. Check Product Stock");
-        //        Console.WriteLine("5. Exit");
-        //        Console.Write("Enter your choice: ");
-        //        string choice = Console.ReadLine();
+            while (!exit)
+            {
+                Console.WriteLine("\n=== PRODUCT MENU ===");
+                Console.WriteLine("1. Add Product");
+                Console.WriteLine("2. View Product Details");
+                Console.WriteLine("3. Update Product Info");
+                Console.WriteLine("4. Check Product Stock");
+                Console.WriteLine("5. Exit");
+                Console.Write("Enter your choice: ");
+                string choice = Console.ReadLine();
 
-        //        switch (choice)
-        //        {
-        //            case "1":
-        //                try
-        //                {
-        //                    Console.Write("Enter Product ID: ");
-        //                    int id = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case "1":
+                        try
+                        {
+                            Console.Write("Enter Product ID: ");
+                            int id = Convert.ToInt32(Console.ReadLine());
 
-        //                    Console.Write("Enter Product Name: ");
-        //                    string name = Console.ReadLine();
+                            Console.Write("Enter Product Name: ");
+                            string name = Console.ReadLine();
 
-        //                    Console.Write("Enter Description: ");
-        //                    string desc = Console.ReadLine();
+                            Console.Write("Enter Description: ");
+                            string desc = Console.ReadLine();
 
-        //                    Console.Write("Enter Price: ");
-        //                    double price = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("Enter Price: ");
+                            double price = Convert.ToDouble(Console.ReadLine());
 
-        //                    Console.Write("Enter Stock Quantity: ");
-        //                    int stock = Convert.ToInt32(Console.ReadLine());
+                            Console.Write("Enter Stock Quantity: ");
+                            int stock = Convert.ToInt32(Console.ReadLine());
 
-        //                    product = new Products(id, name, desc, price, stock);
-        //                    Console.WriteLine(" Product added successfully.");
-        //                }
-        //                catch (InValidDataException ex)
-        //                {
-        //                    Console.WriteLine(ex.Message);
-        //                }
-        //                break;
+                            product = new Products(id, name, desc, price, stock);
+                            Console.WriteLine(" Product added successfully.");
+                        }
+                        catch (InValidDataException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
+                        break;
 
-        //            case "2":
-        //                if (product != null)
-        //                {
-        //                    Console.WriteLine("\n--- Product Details ---");
-        //                    Console.WriteLine(product.GetProductDetails());
-        //                    Console.WriteLine($"Stock Quantity: {product.StockInQuantity}");
-        //                }
-        //                else
-        //                {
-        //                    Console.WriteLine("No product found. Please add a product first.");
-        //                }
-        //                break;
+                    case "2":
+                        if (product != null)
+                        {
+                            Console.WriteLine("\n--- Product Details ---");
+                            Console.WriteLine(product.GetProductDetails());
+                            Console.WriteLine($"Stock Quantity: {product.StockInQuantity}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No product found. Please add a product first.");
+                        }
+                        break;
 
-        //            case "3":
-        //                if (product != null)
-        //                {
-        //                   Console.Write("Enter new price (leave blank to keep current): ");
-        //                    string newPriceInput = Console.ReadLine();
-        //                    if (!string.IsNullOrWhiteSpace(newPriceInput))
-        //                    {
-        //                        double newPrice = Convert.ToDouble(newPriceInput);
-        //                        product.Price = newPrice;
-        //                    }
+                    case "3":
+                        if (product != null)
+                        {
+                            Console.Write("Enter new price (leave blank to keep current): ");
+                            string newPriceInput = Console.ReadLine();
+                            if (!string.IsNullOrWhiteSpace(newPriceInput))
+                            {
+                                double newPrice = Convert.ToDouble(newPriceInput);
+                                product.Price = newPrice;
+                            }
 
-        //                    Console.WriteLine("Product info updated.");
-        //                }
-        //                else
-        //                {
-        //                    Console.WriteLine("No product available to update.");
-        //                }
-        //                break;
+                            Console.WriteLine("Product info updated.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No product available to update.");
+                        }
+                        break;
 
-        //            case "4":
-        //                if (product != null)
-        //                {
-        //                    if (product.IsProductInStock())
-        //                    {
-        //                        Console.WriteLine("Product is in stock.");
-        //                    }
-        //                    else
-        //                    {
-        //                        Console.WriteLine("Product is out of stock.");
-        //                    }
-        //                }
-        //                else
-        //                {
-        //                    Console.WriteLine("Add a product first to check stock.");
-        //                }
-        //                break;
+                    case "4":
+                        if (product != null)
+                        {
+                            if (product.IsProductInStock())
+                            {
+                                Console.WriteLine("Product is in stock.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Product is out of stock.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Add a product first to check stock.");
+                        }
+                        break;
 
-        //            case "5":
-        //                exit = true;
-        //                Console.WriteLine("Exiting...");
-        //                break;
+                    case "5":
+                        exit = true;
+                        Console.WriteLine("Exiting...");
+                        break;
 
-        //            default:
-        //                Console.WriteLine("Invalid option. Please try again.");
-        //                break;
-        //        }
-        //    }
-        //}
+                    default:
+                        Console.WriteLine("Invalid option. Please try again.");
+                        break;
+                }
+            }
+        }
     }
 }
