@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechShop.Mains;
 
 namespace TechShop.DataBase.Task7
 {

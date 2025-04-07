@@ -10,10 +10,6 @@
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DataBase\Task3\" />
-  </ItemGroup>
 	
 
 </Project>

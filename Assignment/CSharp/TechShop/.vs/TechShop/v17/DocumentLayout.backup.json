@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\database\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\database\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\database\\task7\\customerupdates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\database\\task7\\customerupdates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\mains\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\mains\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,39 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DatabaseConnector.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\DataBase\\DatabaseConnector.cs",
-              "RelativeDocumentMoniker": "TechShop\\DataBase\\DatabaseConnector.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\DataBase\\DatabaseConnector.cs",
-              "RelativeToolTip": "TechShop\\DataBase\\DatabaseConnector.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAowE4AAAAoAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Mains\\DatabaseConnector.cs",
+              "RelativeDocumentMoniker": "TechShop\\Mains\\DatabaseConnector.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Mains\\DatabaseConnector.cs",
+              "RelativeToolTip": "TechShop\\Mains\\DatabaseConnector.cs",
+              "ViewState": "AgIAAAQAAABAMjMzMzMbwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T11:14:44.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Customers.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Customers.cs",
-              "RelativeDocumentMoniker": "TechShop\\Customers.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Customers.cs",
-              "RelativeToolTip": "TechShop\\Customers.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAADwv6YAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T11:08:48.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomerUpdates.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\DataBase\\Task7\\CustomerUpdates.cs",
-              "RelativeDocumentMoniker": "TechShop\\DataBase\\Task7\\CustomerUpdates.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\DataBase\\Task7\\CustomerUpdates.cs",
-              "RelativeToolTip": "TechShop\\DataBase\\Task7\\CustomerUpdates.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T11:07:07.936Z",
+              "WhenOpened": "2025-04-07T16:19:16.265Z",
               "EditorCaption": ""
             }
           ]

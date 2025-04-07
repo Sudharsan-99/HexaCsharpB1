@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using TechShop.DataBase.Task1;
-
 using TechShop.DataBase.Task2;
 using TechShop.DataBase.Task4;
 using TechShop.DataBase.Task5;
 using TechShop.DataBase.Task6;
 using TechShop.DataBase.Task7;
+using TechShop.DataBase.Task8;
+using TechShop.DataBase.Task9;
+using TechShop.DataBase.Task3;
 
-namespace TechShop.DataBase
+namespace TechShop.Mains
 {
     public class DatabaseConnector
     {
@@ -31,16 +33,19 @@ namespace TechShop.DataBase
             while (running) 
             {
                 Console.WriteLine("DataBase Connectivity Related Methods");
-                Console.WriteLine("1.add Customer ");
-                Console.WriteLine("2. Add Products ");
-                Console.WriteLine("3. Update Products");
-                Console.WriteLine("4.See Order Status");
-                Console.WriteLine("5.Add To Inventory");
-                Console.WriteLine("6.Update Inventory");
-                Console.WriteLine("7.Delete From Inventory");
-                Console.WriteLine("8.Generate Sale Report Based on Category");
-                Console.WriteLine("9.Update Customer Details");
-                Console.WriteLine("10.Exit");
+                Console.WriteLine("1.(TASK 1)add Customer ");
+                Console.WriteLine("2. (TASK 2)Add Products ");
+                Console.WriteLine("3.(TASK 2) Update Products");
+                Console.WriteLine("(TASK--4)4.See Order Status");
+                Console.WriteLine("(TASK--5)5.Add To Inventory");
+                Console.WriteLine("(TASK--5)6.Update Inventory");
+                Console.WriteLine("(TASK--5)7.Delete From Inventory");
+                Console.WriteLine("(TASK--6)8.Generate Sale Report Based on Category");
+                Console.WriteLine("(TASK--7)9.Update Customer Details");
+                Console.WriteLine("(TASK--8)10.Payment Processing -- Pay The Amount");
+                Console.WriteLine("(TASK--9)11.Product Searching ");
+                Console.WriteLine("(TASK--3)12.Place a Order");
+                Console.WriteLine("13.Exit");
                 Console.Write("Enter Your Choice = ");
                 string choice = Console.ReadLine();
 
@@ -76,8 +81,17 @@ namespace TechShop.DataBase
                         CustomerUpdates.UpdateCustomerAccount();
                         break;
                     case "10":
+                        PaymentProcessor.ProcessPayment();
+                        break;
+                    case "11":
+                        ProductSearch.SearchAndRecommend();
+                        break;
+                    case "12":
+                        OrderProcessor.PlaceOrder();
+                        break;
+                    case "13":
                         running = false;
-                        Console.WriteLine("Exiting program. Goodbye!");
+                        Console.WriteLine("Exiting program bye!");
                         break;
                     default:
                         Console.WriteLine("Enter a valid data");

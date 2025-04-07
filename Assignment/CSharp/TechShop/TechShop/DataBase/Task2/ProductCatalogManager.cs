@@ -7,6 +7,7 @@ using System.Net;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using TechShop.Mains;
 
 namespace TechShop.DataBase.Task2
 {
