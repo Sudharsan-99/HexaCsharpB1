@@ -144,7 +144,7 @@ namespace TechShop
         }
 
 
-        private bool isValidEmail(string email)
+        public static  bool isValidEmail(string email)
         {
             if (!email.Contains("@"))
             {
@@ -164,7 +164,7 @@ namespace TechShop
             return true;
         }
 
-        private bool isValidPhone(string phone) 
+        public static  bool isValidPhone(string phone) 
         {
             if (!(phone.Length == 10))
             {

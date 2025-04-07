@@ -2,61 +2,91 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
-using System.Security.Cryptography;
-using System.Xml.Linq;
+using TechShop.DataBase.Task1;
+
+using TechShop.DataBase.Task2;
+using TechShop.DataBase.Task4;
+using TechShop.DataBase.Task5;
+using TechShop.DataBase.Task6;
+using TechShop.DataBase.Task7;
 
 namespace TechShop.DataBase
 {
     public class DatabaseConnector
     {
-        static SqlConnection con = null;
-        static SqlCommand cmd;
-        static SqlDataReader dr;
+        public static SqlConnection con ;
+        public static SqlCommand cmd;
+        public static SqlDataReader dr;
 
-        static void Main(string[] args)
-        {
-            AddCustomer();
-        }
         public static SqlConnection getConnection()
         {
             con = new SqlConnection("data source = DESKTOP-R2484O8\\SQLEXPRESS;initial catalog = TechShop;integrated security = true;");
             con.Open();
             return con;
         }
-
-        public static void AddCustomer()
+        static void Main(string[] args)
         {
-            con = getConnection();
-            string FirstName, LastName, Email, Phone, Address;
-            Console.Write("Enter The FirstName = ");
-            FirstName = Console.ReadLine();
-            Console.Write("Enter The LastName = ");
-            LastName = Console.ReadLine();
-            Console.Write("Enter The Email = ");
-            Email = Console.ReadLine();
-            Console.Write("Enter The Phone = ");
-            Phone = Console.ReadLine();
-            Console.Write("Enter The Address = ");
-            Address = Console.ReadLine();
-
-            cmd = new SqlCommand("insert into Customers(FirstName, LastName, Email, Phone, [Address]) values (@FirstName,@LastName,@Email,@Phone,@Address)",con);
-
-            cmd.Parameters.AddWithValue("FirstName", FirstName);
-            cmd.Parameters.AddWithValue("LastName", LastName);
-            cmd.Parameters.AddWithValue("Email", Email);
-            cmd.Parameters.AddWithValue("Phone", Phone);
-            cmd.Parameters.AddWithValue("Address", Address);
-
-            int rows = cmd.ExecuteNonQuery();
-            if (rows > 0)
+            bool running = true;
+            while (running) 
             {
-                Console.WriteLine("Record added successfully..");
+                Console.WriteLine("DataBase Connectivity Related Methods");
+                Console.WriteLine("1.add Customer ");
+                Console.WriteLine("2. Add Products ");
+                Console.WriteLine("3. Update Products");
+                Console.WriteLine("4.See Order Status");
+                Console.WriteLine("5.Add To Inventory");
+                Console.WriteLine("6.Update Inventory");
+                Console.WriteLine("7.Delete From Inventory");
+                Console.WriteLine("8.Generate Sale Report Based on Category");
+                Console.WriteLine("9.Update Customer Details");
+                Console.WriteLine("10.Exit");
+                Console.Write("Enter Your Choice = ");
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        CustomerRegistration.AddCustomer();
+                        break;
+                    case "2":
+                        ProductCatalogManager productCatalogManager = new ProductCatalogManager();
+                        productCatalogManager.AddProduct();
+                        break;
+                    case "3":
+                        ProductCatalogManager pcm = new ProductCatalogManager();
+                        pcm.UpdateProduct();
+                        break;
+                    case "4":
+                        TrackingOrderStatus.SeeOrderStatus();
+                        break;
+                    case "5":
+                        InventoryManagementSystem.AddInventory();
+                        break;
+                    case "6":
+                        InventoryManagementSystem.UpdateInventory();
+                        break;
+                    case "7":
+                        InventoryManagementSystem.RemoveDiscontinuedInventory();
+                        break;
+                    case "8":
+                        SalesReport.GenerateSalesReportByCategory();
+                        break;
+                    case "9":
+                        CustomerUpdates.UpdateCustomerAccount();
+                        break;
+                    case "10":
+                        running = false;
+                        Console.WriteLine("Exiting program. Goodbye!");
+                        break;
+                    default:
+                        Console.WriteLine("Enter a valid data");
+                        break;
+                }
+
             }
-            else { Console.WriteLine("Unable to add a record .."); }
-                
         }
+       
     }
    
 }
