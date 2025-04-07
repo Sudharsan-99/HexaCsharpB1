@@ -84,12 +84,14 @@ namespace TechShop
 
         public bool ProcessPayment(Orders order)
         {
-            Payment payment = new Payment(order, (double)order.TotalAmount, "Completed", DateTime.Now);
+            int paymentId = _payments.Count + 1;
+            Payment payment = new Payment(paymentId, order, (double)order.TotalAmount, "Completed", DateTime.Now);
             _payments.Add(payment);
 
             Console.WriteLine($"Payment of ₹{order.TotalAmount} processed successfully for Order #{order.OrderId}.");
             return true;
         }
+
 
     }
 }

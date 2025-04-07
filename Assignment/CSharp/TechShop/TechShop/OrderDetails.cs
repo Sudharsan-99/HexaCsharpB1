@@ -7,6 +7,7 @@ using TechShop.Exceptions;
 
 namespace TechShop
 {
+    //Task 1,2,3
     public class OrderDetails
     {
         private int _orderDetailID;
@@ -19,7 +20,12 @@ namespace TechShop
         public int OrderDetailID
         {
             get { return _orderDetailID; }
-            set { _orderDetailID = value; }
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException("OrderDetailID must be greater than zero.");
+                _orderDetailID = value;
+            }
         }
 
         public Orders Order
@@ -31,18 +37,36 @@ namespace TechShop
         public Products Product
         {
             get { return _product; }
-            set { _product = value; }
+            set 
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException(nameof(Product), "Product cannot be null.");
+                }
+
+                _product = value;
+            }
         }
 
         public int Quantity
         {
             get { return _quantity; }
-            set { _quantity = value; }
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException("Quantity must be greater than zero.");
+                _quantity = value;
+            }
         }
         public double DiscountPercentage
         {
             get { return _discountPercentage; }
-            private set { _discountPercentage = value; }
+            set
+            {
+                if (value < 0 || value > 100)
+                    throw new ArgumentException("Discount must be between 0 and 100.");
+                _discountPercentage = value;
+            }
         }
         //COnstructor
         public OrderDetails(int orderDetailId, Orders order, Products product, int quantity)
@@ -97,6 +121,99 @@ namespace TechShop
             }
             DiscountPercentage = discountPercentage;
         }
+
+
+        //Main Method
+        //static void Main(string[] args)
+        //{
+        //    // Sample product and order
+        //    Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
+        //    Products laptop = new Products(1, "Laptop", "High-performance laptop", 1000.0, 20);
+        //    Orders order = new Orders(1, customer, DateTime.Now);
+
+        //    // Order detail
+        //    OrderDetails detail = new OrderDetails(1, order, laptop, 2);
+
+        //    bool exit = false;
+
+        //    while (!exit)
+        //    {
+        //        Console.WriteLine("----- Order Detail Menu -----");
+        //        Console.WriteLine("1. View Order Detail Info");
+        //        Console.WriteLine("2. Calculate Subtotal");
+        //        Console.WriteLine("3. Update Quantity");
+        //        Console.WriteLine("4. Add Discount");
+        //        Console.WriteLine("5. Exit");
+        //        Console.Write("Enter your choice: ");
+        //        string input = Console.ReadLine();
+
+        //        switch (input)
+        //        {
+        //            case "1":
+        //                Console.WriteLine("Order Detail Info:");
+        //                Console.WriteLine(detail.GetOrderDetailInfo());
+        //                break;
+
+        //            case "2":
+        //                double subtotal = detail.CalculateSubtotal();
+        //                Console.WriteLine("Subtotal is: " + subtotal);
+        //                break;
+
+        //            case "3":
+        //                Console.Write("Enter new quantity: ");
+        //                string qtyInput = Console.ReadLine();
+        //                int newQty;
+        //                if (int.TryParse(qtyInput, out newQty))
+        //                {
+        //                    try
+        //                    {
+        //                        detail.UpdateQuantity(newQty);
+        //                        Console.WriteLine("Quantity updated successfully.");
+        //                    }
+        //                    catch (Exception ex)
+        //                    {
+        //                        Console.WriteLine("Error: " + ex.Message);
+        //                    }
+        //                }
+        //                else
+        //                {
+        //                    Console.WriteLine("Invalid quantity input.");
+        //                }
+        //                break;
+
+        //            case "4":
+        //                Console.Write("Enter discount percentage: ");
+        //                string discountInput = Console.ReadLine();
+        //                double discount;
+        //                if (double.TryParse(discountInput, out discount))
+        //                {
+        //                    try
+        //                    {
+        //                        detail.AddDiscount(discount);
+        //                        Console.WriteLine("Discount applied successfully.");
+        //                    }
+        //                    catch (Exception ex)
+        //                    {
+        //                        Console.WriteLine("Error: " + ex.Message);
+        //                    }
+        //                }
+        //                else
+        //                {
+        //                    Console.WriteLine("Invalid discount input.");
+        //                }
+        //                break;
+
+        //            case "5":
+        //                exit = true;
+        //                Console.WriteLine("Exiting Order Detail menu.");
+        //                break;
+
+        //            default:
+        //                Console.WriteLine("Invalid choice. Try again.");
+        //                break;
+        //        }
+        //    }
+        //}
 
     }
 }
