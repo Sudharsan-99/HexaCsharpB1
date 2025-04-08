@@ -10,6 +10,16 @@
 //        {
 //            OrderManager orderManager = new OrderManager();
 //            bool running = true;
+//            Products product1 = new Products(1, "Laptop", "Gaming Laptop", 75000, 10);
+//            Products product2 = new Products(2, "Mouse", "Wireless Mouse", 1500, 5);
+
+//            orderManager.AddInventory(new Inventory(1, product1, 10));
+//            orderManager.AddInventory(new Inventory(2, product2, 15));
+
+//            List<Products> productCatalog = new List<Products> { product1, product2 };
+
+
+
 
 //            while (running)
 //            {
@@ -34,42 +44,71 @@
 //                    case "2":
 //                        try
 //                        {
-//                            Console.WriteLine("Adding a new order...");
+//                            Console.WriteLine("Available Products:");
+
+//                            foreach (var p in productCatalog)
+//                            {
+//                                Console.WriteLine($"ID: {p.ProductID}, Name: {p.ProductName}, Price: {p.Price}, Stock: {p.StockInQuantity}");
+//                            }
 
 //                            Console.Write("Enter Order ID: ");
 //                            int orderId = Convert.ToInt32(Console.ReadLine());
 
-//                            Console.Write("Enter Product ID: ");
-//                            int productId = Convert.ToInt32(Console.ReadLine());
+//                            Console.Write("Enter Product ID to order: ");
+//                            int selectedProductId = Convert.ToInt32(Console.ReadLine());
 
-//                            Console.Write("Enter Product Name: ");
-//                            string productName = Console.ReadLine();
+//                            Products selectedProduct = null;
 
-//                            Console.Write("Enter Product Price: ");
-//                            double productPrice = Convert.ToDouble(Console.ReadLine());
+//                            foreach (Products p in productCatalog)
+//                            {
+//                                if (p.ProductID == selectedProductId)
+//                                {
+//                                    selectedProduct = p;
+//                                    break;
+//                                }
+//                            }
+
+//                            if (selectedProduct == null)
+//                            {
+//                                Console.WriteLine("Invalid Product ID.");
+//                                break;
+//                            }
 
 //                            Console.Write("Enter Quantity: ");
 //                            int quantity = Convert.ToInt32(Console.ReadLine());
 
-//                            // Create product and order detail
+//                            Inventory item = orderManager.FindInventoryItem(selectedProduct.ProductID);
+//                            if (item == null || item.QuantityInStock < quantity)
+//                            {
+//                                Console.WriteLine("Not enough stock available.");
+//                                break;
+//                            }
 
-//                            Products product = new Products(productId, productName, (int)productPrice);
+//                            // Create order detail and order
+//                            OrderDetails orderDetail = new OrderDetails(selectedProduct, quantity);
+//                            List<OrderDetails> orderDetailsList = new List<OrderDetails> { orderDetail };
 
-//                            OrderDetails orderDetail = new OrderDetails(product, quantity);
-
-//                            List<OrderDetails> orderDetailsList = new List<OrderDetails>();
-//                            orderDetailsList.Add(orderDetail);
-
-//                            Orders newOrder = new Orders(orderId, DateTime.Now, "Pending", orderDetailsList, (decimal)product.Price * quantity);
+//                            Orders newOrder = new Orders(
+//                                orderId,
+//                                DateTime.Now,
+//                                "Pending",
+//                                orderDetailsList,
+//                                (decimal)selectedProduct.Price * quantity
+//                            );
 
 //                            orderManager.AddOrder(newOrder);
+
+//                            Console.WriteLine("Order successfully added!");
 //                        }
-//                        catch (Exception ex)
+//                        catch (InsufficientStockException ex)
 //                        {
 //                            Console.WriteLine("Error: " + ex.Message);
 //                        }
+//                        catch (Exception ex)
+//                        {
+//                            Console.WriteLine("An error occurred: " + ex.Message);
+//                        }
 //                        break;
-
 //                    case "3":
 //                        Console.Write("Enter Order ID to cancel: ");
 //                        int cancelId = Convert.ToInt32(Console.ReadLine());

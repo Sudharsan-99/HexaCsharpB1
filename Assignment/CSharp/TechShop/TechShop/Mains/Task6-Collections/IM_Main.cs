@@ -9,40 +9,40 @@
 //namespace TechShop.Mains.Task6
 //{
 //    class IM_Main
-//{
-//    static void Main(string[] args)
 //    {
-//        InventoryManager manager = new InventoryManager();
-//        bool exit = false;
-
-//        while (!exit)
+//        static void Main(string[] args)
 //        {
-//            Console.WriteLine("\n--- TechShop Inventory Management ---");
-//            Console.WriteLine("1. Add Inventory Item");
-//            Console.WriteLine("2. Update Inventory on Order");
-//            Console.WriteLine("3. Remove Inventory Item");
-//            Console.WriteLine("4. Display All Inventory");
-//            Console.WriteLine("5. Exit");
-//            Console.Write("Enter your choice: ");
+//            InventoryManager manager = new InventoryManager();
+//            bool exit = false;
 
-//            int choice = Convert.ToInt32(Console.ReadLine());
-//            switch (choice)
+//            while (!exit)
 //            {
-//                case 1:
-//                    // Example Product
-//                    Products newProduct = new Products
-//                    {
-//                        ProductID = 101,
-//                        ProductName = "Gaming Laptop"
-//                    };
+//                Console.WriteLine("\n--- TechShop Inventory Management ---");
+//                Console.WriteLine("1. Add Inventory Item");
+//                Console.WriteLine("2. Update Inventory on Order");
+//                Console.WriteLine("3. Remove Inventory Item");
+//                Console.WriteLine("4. Display All Inventory");
+//                Console.WriteLine("5. Exit");
+//                Console.Write("Enter your choice: ");
 
-//                    Inventory newItem = new Inventory(newProduct, 20, DateTime.Now);
+//                int choice = Convert.ToInt32(Console.ReadLine());
+//                switch (choice)
+//                {
+//                    case 1:
+//                        // Example Product
+//                        Products newProduct = new Products
+//                        {
+//                            ProductID = 101,
+//                            ProductName = "Gaming Laptop"
+//                        };
 
-//                    manager.AddInventoryItem(newItem);
-//                    break;
+//                        Inventory newItem = new Inventory(newProduct, 20, DateTime.Now);
 
-//                case 2:
-//                    List<OrderDetails> orderList = new List<OrderDetails>
+//                        manager.AddInventoryItem(newItem);
+//                        break;
+
+//                    case 2:
+//                        List<OrderDetails> orderList = new List<OrderDetails>
 //                        {
 //                            new OrderDetails
 //                            {
@@ -51,38 +51,38 @@
 //                            }
 //                        };
 
-//                    try
-//                    {
-//                        manager.UpdateInventoryOnOrder(orderList);
-//                    }
-//                    catch (InsufficientStockException ex)
-//                    {
-//                        Console.WriteLine($"Error: {ex.Message}");
-//                    }
-//                    break;
+//                        try
+//                        {
+//                            manager.UpdateInventoryOnOrder(orderList);
+//                        }
+//                        catch (InsufficientStockException ex)
+//                        {
+//                            Console.WriteLine($"Error: {ex.Message}");
+//                        }
+//                        break;
 
-//                case 3:
-//                    Console.Write("Enter Product ID to remove: ");
-//                    int removeId = Convert.ToInt32(Console.ReadLine());
-//                    manager.RemoveInventoryItem(removeId);
-//                    break;
+//                    case 3:
+//                        Console.Write("Enter Product ID to remove: ");
+//                        int removeId = Convert.ToInt32(Console.ReadLine());
+//                        manager.RemoveInventoryItem(removeId);
+//                        break;
 
-//                case 4:
-//                    manager.DisplayAllInventory();
-//                    break;
+//                    case 4:
+//                        manager.DisplayAllInventory();
+//                        break;
 
-//                case 5:
-//                    exit = true;
-//                    break;
+//                    case 5:
+//                        exit = true;
+//                        break;
 
-//                default:
-//                    Console.WriteLine("Invalid choice.");
-//                    break;
+//                    default:
+//                        Console.WriteLine("Invalid choice.");
+//                        break;
+//                }
 //            }
+
+//            Console.WriteLine("Exiting TechShop Inventory Management.");
 //        }
 
-//        Console.WriteLine("Exiting TechShop Inventory Management.");
 //    }
-
-//}
 //}

@@ -1,6 +1,6 @@
 ﻿//using System;
 //using System.Collections.Generic;
-
+//using TechShop.TASK1.CustomerClass;
 //namespace TechShop.Mains.Task4
 
 //{

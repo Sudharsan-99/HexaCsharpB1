@@ -66,6 +66,14 @@ namespace TechShop
         }
 
         // Constructor
+
+        public Inventory(Products product, int quantityInStock)
+        {
+            _product=product;
+            _quantityInStock = quantityInStock;
+            _lastStockUpdate = DateTime.Now;
+        }
+
         public Inventory(int inventoryID, Products product, int quantity)
         {
             InventoryID = inventoryID;

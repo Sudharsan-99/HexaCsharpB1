@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechShop.Exceptions;
+using TechShop.TASK1;
 
 namespace TechShop.Collections
 {
@@ -14,6 +15,8 @@ namespace TechShop.Collections
 
         private SortedList<int, Inventory> _inventory = new SortedList<int, Inventory>();
         private PaymentManager _paymentManager;
+
+
 
         public void AddOrder(Orders newOrder)
         {
@@ -26,15 +29,6 @@ namespace TechShop.Collections
                     throw new InsufficientStockException("Not enough stock for product: " + detail.Product.ProductName);
                 }
                 item.QuantityInStock -= detail.Quantity;
-            }
-
-            // Process payment
-            bool paymentSuccess = _paymentManager.ProcessPayment(newOrder);
-
-
-            if (!paymentSuccess)
-            {
-                throw new PaymentFailedException("Payment was declined.");
             }
 
             _orders.Add(newOrder);
@@ -99,7 +93,7 @@ namespace TechShop.Collections
         }
 
 
-        private Inventory FindInventoryItem(int productId)
+        public Inventory FindInventoryItem(int productId)
         {
             if (_inventory.ContainsKey(productId))
             {
@@ -185,6 +179,11 @@ namespace TechShop.Collections
                     Console.WriteLine($"  - Product: {detail.Product.ProductName}, Qty: {detail.Quantity}, Price: ${detail.Product.Price}");
                 }
             }
+        }
+
+        public void AddInventory(Inventory inventory)
+        {
+            _inventory[inventory.Product.ProductID] = inventory;
         }
 
 
