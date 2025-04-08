@@ -129,7 +129,7 @@ namespace TechShop
         }
 
 
-        Main Method
+      /*
         static void Main(string[] args)
         {
             // Sample product and order
@@ -219,7 +219,7 @@ namespace TechShop
                         break;
                 }
             }
-        }
+        }*/
 
     }
 }

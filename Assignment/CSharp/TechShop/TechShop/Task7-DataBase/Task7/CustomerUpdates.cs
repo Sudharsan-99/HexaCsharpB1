@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechShop.Mains;
+using TechShop.TASK1.CustomerClass;
 
 namespace TechShop.DataBase.Task7
 {

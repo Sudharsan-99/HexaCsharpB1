@@ -5,6 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using TechShop.Exceptions;
+using TechShop.TASK1.CustomerClass;
 
 namespace TechShop
 {
@@ -122,6 +123,7 @@ namespace TechShop
                 total += (int)item.CalculateSubtotal();
             }
             TotalAmount = total;
+            Console.WriteLine($"Total Amount is == {TotalAmount}");
         }
 
         public void GetOrderDetails()
@@ -153,10 +155,14 @@ namespace TechShop
 
         public void UpdateOrderStatus(string newStatus)
         {
+            string[] status = {"Pending","Confirmed","Shipped","Delivered","Cancelled"};
+            if(!(status.Contains(newStatus))){
+                throw new InvalidDataException("Error : Enter a Valid Status");
+            }
             OrderStatus = newStatus;
             Console.WriteLine($"Order status updated to: {OrderStatus}");
         }
-
+        
         static void Main(string[] args)
         {
             Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
@@ -196,7 +202,7 @@ namespace TechShop
                         break;
 
                     case "3":
-                        Console.WriteLine("Enter new order status (Pending, Confirmed, Shipped, Delivered, Cancelled): ");
+                        Console.Write("Enter new order status (Pending, Confirmed, Shipped, Delivered, Cancelled): ");
                         string status = Console.ReadLine();
                         try
                         {

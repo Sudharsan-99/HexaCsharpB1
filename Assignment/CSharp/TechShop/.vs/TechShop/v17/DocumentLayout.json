@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\task1,2,3\\orderclass\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\task1,2,3\\orderclass\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\TASK1,2,3\\OrderClass\\Orders.cs",
+              "RelativeDocumentMoniker": "TechShop\\TASK1,2,3\\OrderClass\\Orders.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\TASK1,2,3\\OrderClass\\Orders.cs",
+              "RelativeToolTip": "TechShop\\TASK1,2,3\\OrderClass\\Orders.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T07:49:41.112Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

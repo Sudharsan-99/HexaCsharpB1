@@ -191,7 +191,7 @@ namespace TechShop
                 Console.WriteLine("------------------------");
             }
         }
-        
+        /*
         static void Main(string[] args)
         {
             List<Inventory> inventoryList = new List<Inventory>();
@@ -341,6 +341,6 @@ namespace TechShop
                         break;
                 }
             }
-        } 
+        } */
     }
 }

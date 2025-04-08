@@ -26,7 +26,7 @@ namespace TechShop
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException("Product ID must be greater than zero.");
+                    throw new InvalidDataException("Error--Product ID must be greater than zero.");
                 _ProductID = value;
             }
         }
@@ -42,7 +42,7 @@ namespace TechShop
             set
             {
                 if (value < 0)
-                    throw new InvalidDataException("Price cannot be negative.");
+                    throw new InvalidDataException("Error--Price cannot be negative.");
                 _Price = value;
             }
         }
@@ -53,7 +53,7 @@ namespace TechShop
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
-                    throw new ArgumentException("Product name cannot be empty.");
+                    throw new ArgumentException("Error---Product name cannot be empty.");
                 _ProductName = value;
             }
         }
@@ -63,8 +63,8 @@ namespace TechShop
             get { return _StockInQuantity; }
             set
             {
-                if (value < 0)
-                    throw new InsufficientStockException("Stock quantity cannot be negative.");
+                if (value <= 0)
+                    throw new InsufficientStockException("Error--Stock quantity cannot be negative.");
                 _StockInQuantity = value;
             }
         }
@@ -94,13 +94,31 @@ namespace TechShop
               $"Price: ${Price}";
         }
 
-        //public void UpdateProductInfo() { }
+        public static void UpdateProductInfo(Products product) 
+        {
+            if (product != null)
+            {
+                Console.Write("Enter new price (leave blank to keep current): ");
+                string newPriceInput = Console.ReadLine();
+                if (!string.IsNullOrWhiteSpace(newPriceInput))
+                {
+                    double newPrice = Convert.ToDouble(newPriceInput);
+                    product.Price = newPrice;
+                }
+
+                Console.WriteLine("Product info updated.");
+            }
+            else
+            {
+                Console.WriteLine("No product available to update.");
+            }
+        }
 
         public bool IsProductInStock() 
         {
             return this.StockInQuantity > 0;
         }
-
+        /*
         static void Main(string[] args)
         {
             Products product = null;
@@ -144,6 +162,10 @@ namespace TechShop
                         {
                             Console.WriteLine(ex.Message);
                         }
+                        catch(InsufficientStockException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                         break;
 
                     case "2":
@@ -160,22 +182,7 @@ namespace TechShop
                         break;
 
                     case "3":
-                        if (product != null)
-                        {
-                            Console.Write("Enter new price (leave blank to keep current): ");
-                            string newPriceInput = Console.ReadLine();
-                            if (!string.IsNullOrWhiteSpace(newPriceInput))
-                            {
-                                double newPrice = Convert.ToDouble(newPriceInput);
-                                product.Price = newPrice;
-                            }
-
-                            Console.WriteLine("Product info updated.");
-                        }
-                        else
-                        {
-                            Console.WriteLine("No product available to update.");
-                        }
+                        UpdateProductInfo(product);
                         break;
 
                     case "4":
@@ -206,6 +213,6 @@ namespace TechShop
                         break;
                 }
             }
-        }
+        }*/
     }
 }

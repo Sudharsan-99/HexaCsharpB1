@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TechShop.Exceptions;
 
-namespace TechShop
+namespace TechShop.TASK1.CustomerClass
 {
     //TASK 1,2,3 Main method is below
     public class Customers
@@ -88,16 +88,17 @@ namespace TechShop
             {
                 throw new InvalidDataException("Invalid PhoneNumber Please Enter a Valid Number");
             }
-            this._CustomerId = CustomerID;
+            _CustomerId = CustomerID;
             this.FirstName = FirstName;
             this.LastName = LastName;
             this.Email = Email;
             this.Phone = Phone;
-            this._Address = Address;
+            _Address = Address;
         }
 
         //Composition and Encapsulation
         private List<Orders> _orders = new List<Orders>();
+
 
         public List<Orders> Orders
         {
@@ -180,7 +181,7 @@ namespace TechShop
             return true;
         }
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             // Create a sample customer
             Customers customer = new Customers(1, "Sudharsan", "M", "sudharsan@gmail.com", "7604875003", "Kolathur, Chennai");
@@ -230,7 +231,7 @@ namespace TechShop
                         break;
                 }
             }
-        }
+        }*/
     }
 
 }
