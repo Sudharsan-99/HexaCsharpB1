@@ -7,7 +7,7 @@ using TechShop.Exceptions;
 
 namespace TechShop
 {
-    //Task 1,2,3
+    //Task 1,2,3 Main method is below
     public class OrderDetails
     {
         private int _orderDetailID;

@@ -7,7 +7,7 @@ using TechShop.Exceptions;
 
 namespace TechShop
 {
-    //TASK 1,2,3
+    //TASK 1,2,3 Main is below
     public class Products
     {
         //Private Fields

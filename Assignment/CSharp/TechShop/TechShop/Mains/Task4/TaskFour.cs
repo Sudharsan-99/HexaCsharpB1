@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TechShop.Mains
+namespace TechShop.Mains.Task4
+
 {
     class TaskFour
     {
