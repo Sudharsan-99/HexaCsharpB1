@@ -79,15 +79,16 @@ namespace TechShop.TASK1.CustomerClass
 
         public Customers(int CustomerID, string FirstName, string LastName, string Email, string Phone, string Address)
         {
-            if (!isValidEmail(Email)) 
+            if (!isValidEmail(Email))
             {
-                throw new InvalidDataException("Invalid Email Please Enter a Valid Email");
+                throw new InValidDataException("Invalid Email Please Enter a Valid Email");
             }
 
             if (!isValidPhone(Phone))
             {
-                throw new InvalidDataException("Invalid PhoneNumber Please Enter a Valid Number");
+                throw new InValidDataException("Invalid PhoneNumber Please Enter a Valid Number");
             }
+
             _CustomerId = CustomerID;
             this.FirstName = FirstName;
             this.LastName = LastName;
@@ -95,6 +96,7 @@ namespace TechShop.TASK1.CustomerClass
             this.Phone = Phone;
             _Address = Address;
         }
+
 
         //Composition and Encapsulation
         private List<Orders> _orders = new List<Orders>();
@@ -181,7 +183,7 @@ namespace TechShop.TASK1.CustomerClass
             return true;
         }
 
-        /*static void Main(string[] args)
+        static void Main(string[] args)
         {
             // Create a sample customer
             Customers customer = new Customers(1, "Sudharsan", "M", "sudharsan@gmail.com", "7604875003", "Kolathur, Chennai");
@@ -231,7 +233,20 @@ namespace TechShop.TASK1.CustomerClass
                         break;
                 }
             }
-        }*/
+        }
+
+        //static void Main(string[] args)
+        //{
+        //    try
+        //    {
+        //        Customers sonu = new Customers(1, "sonu", "m", "sudharsan", "7604875003", "kolathur");
+        //    }
+        //    catch (InValidDataException ex)
+        //    {
+        //        Console.WriteLine("Error --- " + ex.Message);
+        //    }
+        //}
+
     }
 
 }

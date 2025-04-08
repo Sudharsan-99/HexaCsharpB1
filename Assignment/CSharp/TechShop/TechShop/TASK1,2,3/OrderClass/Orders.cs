@@ -162,7 +162,7 @@ namespace TechShop
             OrderStatus = newStatus;
             Console.WriteLine($"Order status updated to: {OrderStatus}");
         }
-        /*
+        
         static void Main(string[] args)
         {
             Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
@@ -228,6 +228,6 @@ namespace TechShop
                         break;
                 }
             }
-        }*/
+        }
     }
 }

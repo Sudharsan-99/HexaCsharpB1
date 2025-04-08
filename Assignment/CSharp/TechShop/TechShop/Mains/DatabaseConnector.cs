@@ -27,6 +27,7 @@ namespace TechShop.Mains
             con.Open();
             return con;
         }
+        
         static void Main(string[] args)
         {
             bool running = true;

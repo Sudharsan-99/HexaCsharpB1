@@ -118,7 +118,7 @@ namespace TechShop
         {
             return this.StockInQuantity > 0;
         }
-        /*
+        
         static void Main(string[] args)
         {
             Products product = null;
@@ -213,6 +213,6 @@ namespace TechShop
                         break;
                 }
             }
-        }*/
+        }
     }
 }

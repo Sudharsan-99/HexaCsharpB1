@@ -17,7 +17,7 @@ namespace TechShop
             {
                 if (p.PaymentID == payment.PaymentID)
                 {
-                    throw new DuplicatePaymentException("Payment with the same ID already exists.");
+                    throw new DuplicatePaymentException("Error---Payment with the same ID already exists.");
                 }
             }
 

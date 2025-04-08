@@ -23,7 +23,7 @@ namespace TechShop.Collections
             {
                 if (p.ProductID == product.ProductID)
                 {
-                    throw new DuplicateProductException("Product with the same ID already exists.");
+                    throw new DuplicateProductException("ERROR--Product with the same ID already exists.");
                 }
             }
 
@@ -50,7 +50,7 @@ namespace TechShop.Collections
 
             if (newPrice < 0 || newStock < 0)
             {
-                throw new InvalidProductUpdateException("Invalid price or stock quantity.");
+                throw new InvalidProductUpdateException("ERROR---Invalid price or stock quantity.");
             }
 
             product.ProductName = newName;
@@ -100,7 +100,7 @@ namespace TechShop.Collections
 
             if (isUsedInOrder)
             {
-                throw new ProductInUseException("Cannot remove product; it exists in an order.");
+                throw new ProductInUseException("Error---Cannot remove product; it exists in an order.");
             }
 
             // Remove the product from list

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\mains\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\mains\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\task1,2,3\\customerclass\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\task1,2,3\\customerclass\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\task5-exceptions\\invaliddataexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\task5-exceptions\\invaliddataexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DatabaseConnector.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Mains\\DatabaseConnector.cs",
-              "RelativeDocumentMoniker": "TechShop\\Mains\\DatabaseConnector.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Mains\\DatabaseConnector.cs",
-              "RelativeToolTip": "TechShop\\Mains\\DatabaseConnector.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAALAAAAAAAAAA==",
+              "Title": "Customers.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\TASK1,2,3\\CustomerClass\\Customers.cs",
+              "RelativeDocumentMoniker": "TechShop\\TASK1,2,3\\CustomerClass\\Customers.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\TASK1,2,3\\CustomerClass\\Customers.cs*",
+              "RelativeToolTip": "TechShop\\TASK1,2,3\\CustomerClass\\Customers.cs*",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAUwPgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T11:49:08.388Z",
+              "WhenOpened": "2025-04-08T13:13:01.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InValidDataException.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Task5-Exceptions\\InValidDataException.cs",
+              "RelativeDocumentMoniker": "TechShop\\Task5-Exceptions\\InValidDataException.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Task5-Exceptions\\InValidDataException.cs",
+              "RelativeToolTip": "TechShop\\Task5-Exceptions\\InValidDataException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T13:12:19.966Z",
               "EditorCaption": ""
             }
           ]

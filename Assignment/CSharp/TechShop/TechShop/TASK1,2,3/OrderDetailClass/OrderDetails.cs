@@ -74,7 +74,7 @@ namespace TechShop
         {
             if (product == null)
             {
-                throw new IncompleteOrderException("Order detail must have a valid product reference.");
+                throw new IncompleteOrderException("Error--Order detail must have a valid product reference.");
             }
 
             OrderDetailID = orderDetailId;
@@ -131,95 +131,119 @@ namespace TechShop
         }
 
 
-      /*
+
+        
+          static void Main(string[] args)
+          {
+              // Sample product and order
+              Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
+              Products laptop = new Products(1, "Laptop", "High-performance laptop", 1000.0, 20);
+              Orders order = new Orders(1, customer, DateTime.Now);
+
+              // Order detail
+              OrderDetails detail = new OrderDetails(1, order, laptop, 2);
+
+              bool exit = false;
+
+              while (!exit)
+              {
+                  Console.WriteLine("----- Order Detail Menu -----");
+                  Console.WriteLine("1. View Order Detail Info");
+                  Console.WriteLine("2. Calculate Subtotal");
+                  Console.WriteLine("3. Update Quantity");
+                  Console.WriteLine("4. Add Discount");
+                  Console.WriteLine("5. Exit");
+                  Console.Write("Enter your choice: ");
+                  string input = Console.ReadLine();
+
+                  switch (input)
+                  {
+                      case "1":
+                          Console.WriteLine("Order Detail Info:");
+                          Console.WriteLine(detail.GetOrderDetailInfo());
+                          break;
+
+                      case "2":
+                          double subtotal = detail.CalculateSubtotal();
+                          Console.WriteLine("Subtotal is: " + subtotal);
+                          break;
+
+                      case "3":
+                          Console.Write("Enter new quantity: ");
+                          string qtyInput = Console.ReadLine();
+                          int newQty;
+                          if (int.TryParse(qtyInput, out newQty))
+                          {
+                              try
+                              {
+                                  detail.UpdateQuantity(newQty);
+                                  Console.WriteLine("Quantity updated successfully.");
+                              }
+                              catch (InvalidDataException ex)
+                              {
+                                  Console.WriteLine("Error: " + ex.Message);
+                              }
+                          }
+                          else
+                          {
+                              Console.WriteLine("Invalid quantity input.");
+                          }
+                          break;
+
+                      case "4":
+                          Console.Write("Enter discount percentage: ");
+                          string discountInput = Console.ReadLine();
+                          double discount;
+                          if (double.TryParse(discountInput, out discount))
+                          {
+                              try
+                              {
+                                  detail.AddDiscount(discount);
+                                  Console.WriteLine("Discount applied successfully.");
+                              }
+                              catch (InvalidDataException ex)
+                              {
+                                  Console.WriteLine("Error: " + ex.Message);
+                              }
+                          }
+                          else
+                          {
+                              Console.WriteLine("Invalid discount input.");
+                          }
+                          break;
+
+                      case "5":
+                          exit = true;
+                          Console.WriteLine("Exiting Order Detail menu.");
+                          break;
+
+                      default:
+                          Console.WriteLine("Invalid choice. Try again.");
+                          break;
+                  }
+              }
+          }
+
+        /*
         static void Main(string[] args)
         {
-            // Sample product and order
-            Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
-            Products laptop = new Products(1, "Laptop", "High-performance laptop", 1000.0, 20);
-            Orders order = new Orders(1, customer, DateTime.Now);
-
-            // Order detail
-            OrderDetails detail = new OrderDetails(1, order, laptop, 2);
-
-            bool exit = false;
-
-            while (!exit)
+            try
             {
-                Console.WriteLine("----- Order Detail Menu -----");
-                Console.WriteLine("1. View Order Detail Info");
-                Console.WriteLine("2. Calculate Subtotal");
-                Console.WriteLine("3. Update Quantity");
-                Console.WriteLine("4. Add Discount");
-                Console.WriteLine("5. Exit");
-                Console.Write("Enter your choice: ");
-                string input = Console.ReadLine();
+                Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
+                Orders order = new Orders(1, customer, DateTime.Now);
 
-                switch (input)
-                {
-                    case "1":
-                        Console.WriteLine("Order Detail Info:");
-                        Console.WriteLine(detail.GetOrderDetailInfo());
-                        break;
+                // passing null to trigger the IncompleteOrderException
+                OrderDetails detail = new OrderDetails(1, order, null, 2);
 
-                    case "2":
-                        double subtotal = detail.CalculateSubtotal();
-                        Console.WriteLine("Subtotal is: " + subtotal);
-                        break;
-
-                    case "3":
-                        Console.Write("Enter new quantity: ");
-                        string qtyInput = Console.ReadLine();
-                        int newQty;
-                        if (int.TryParse(qtyInput, out newQty))
-                        {
-                            try
-                            {
-                                detail.UpdateQuantity(newQty);
-                                Console.WriteLine("Quantity updated successfully.");
-                            }
-                            catch (InvalidDataException ex)
-                            {
-                                Console.WriteLine("Error: " + ex.Message);
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Invalid quantity input.");
-                        }
-                        break;
-
-                    case "4":
-                        Console.Write("Enter discount percentage: ");
-                        string discountInput = Console.ReadLine();
-                        double discount;
-                        if (double.TryParse(discountInput, out discount))
-                        {
-                            try
-                            {
-                                detail.AddDiscount(discount);
-                                Console.WriteLine("Discount applied successfully.");
-                            }
-                            catch (InvalidDataException ex)
-                            {
-                                Console.WriteLine("Error: " + ex.Message);
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Invalid discount input.");
-                        }
-                        break;
-
-                    case "5":
-                        exit = true;
-                        Console.WriteLine("Exiting Order Detail menu.");
-                        break;
-
-                    default:
-                        Console.WriteLine("Invalid choice. Try again.");
-                        break;
-                }
+                Console.WriteLine("This line will not be reached if exception is thrown.");
+            }
+            catch (IncompleteOrderException ex)
+            {
+                Console.WriteLine("Caught custom exception: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("General error: " + ex.Message);
             }
         }*/
 
