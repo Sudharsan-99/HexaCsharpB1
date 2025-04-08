@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechShop.Exceptions;
+using TechShop.TASK1.CustomerClass;
 
 namespace TechShop
 {
@@ -23,7 +24,7 @@ namespace TechShop
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException("OrderDetailID must be greater than zero.");
+                    throw new InvalidDataException("OrderDetailID must be greater than zero.");
                 _orderDetailID = value;
             }
         }
@@ -54,7 +55,7 @@ namespace TechShop
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException("Quantity must be greater than zero.");
+                    throw new InvalidDataException("Quantity must be greater than zero.");
                 _quantity = value;
             }
         }
@@ -64,7 +65,7 @@ namespace TechShop
             set
             {
                 if (value < 0 || value > 100)
-                    throw new ArgumentException("Discount must be between 0 and 100.");
+                    throw new InvalidDataException("Discount must be between 0 and 100.");
                 _discountPercentage = value;
             }
         }
@@ -107,14 +108,15 @@ namespace TechShop
                    $"Product: {Product.ProductName}\n" +
                    $"Quantity: {Quantity}\n" +
                    $"Price per unit: ${Product.Price}\n" +
-                   $"Subtotal: ${CalculateSubtotal()}";
+                   $"Subtotal: ${CalculateSubtotal()}\n"+
+                   "---------------------";
         }
 
         public void UpdateQuantity(int newQuantity)
         {
             if (newQuantity <= 0)
             {
-                throw new ArgumentException("Quantity must be greater than zero.");
+                throw new InvalidDataException("Quantity must be greater than zero.");
             }
             Quantity = newQuantity;
         }
@@ -123,7 +125,7 @@ namespace TechShop
         {
             if (discountPercentage < 0 || discountPercentage > 100)
             {
-                throw new ArgumentException("Discount must be between 0 and 100.");
+                throw new InvalidDataException("Discount must be between 0 and 100.");
             }
             DiscountPercentage = discountPercentage;
         }
@@ -176,7 +178,7 @@ namespace TechShop
                                 detail.UpdateQuantity(newQty);
                                 Console.WriteLine("Quantity updated successfully.");
                             }
-                            catch (Exception ex)
+                            catch (InvalidDataException ex)
                             {
                                 Console.WriteLine("Error: " + ex.Message);
                             }
@@ -198,7 +200,7 @@ namespace TechShop
                                 detail.AddDiscount(discount);
                                 Console.WriteLine("Discount applied successfully.");
                             }
-                            catch (Exception ex)
+                            catch (InvalidDataException ex)
                             {
                                 Console.WriteLine("Error: " + ex.Message);
                             }

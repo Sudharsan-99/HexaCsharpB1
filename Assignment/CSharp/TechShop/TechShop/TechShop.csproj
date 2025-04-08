@@ -13,7 +13,9 @@
 
   <ItemGroup>
     <Folder Include="TASK1,2,3\CustomerClass\Output\" />
+    <Folder Include="TASK1,2,3\InventoryClass\output\" />
     <Folder Include="TASK1,2,3\OrderClass\Output\" />
+    <Folder Include="TASK1,2,3\OrderDetailClass\Output\" />
     <Folder Include="TASK1,2,3\ProductsClass\Output\" />
   </ItemGroup>
 	

@@ -38,7 +38,7 @@ namespace TechShop
             set
             {
                 if (value <= 0)
-                    throw new ArgumentException("Order ID must be greater than 0.");
+                    throw new InvalidDataException("Order ID must be greater than 0.");
                 _OrderId = value;
             }
         }
@@ -60,7 +60,7 @@ namespace TechShop
             set
             {
                 if (value > DateTime.Now)
-                    throw new ArgumentException("Order date cannot be in the future.");
+                    throw new InvalidDataException("Order date cannot be in the future.");
                 _OrderDate = value;
             }
         }
@@ -71,7 +71,7 @@ namespace TechShop
             set
             {
                 if (value < 0)
-                    throw new ArgumentException("Total amount cannot be negative.");
+                    throw new InvalidDataException("Total amount cannot be negative.");
                 _TotalAmount = value;
             }
         }
@@ -162,7 +162,7 @@ namespace TechShop
             OrderStatus = newStatus;
             Console.WriteLine($"Order status updated to: {OrderStatus}");
         }
-        
+        /*
         static void Main(string[] args)
         {
             Customers customer = new Customers(1, "Sudharsan", "M", "sonu@gmail.com", "1234567890", "kolathur");
@@ -228,6 +228,6 @@ namespace TechShop
                         break;
                 }
             }
-        }
+        }*/
     }
 }
