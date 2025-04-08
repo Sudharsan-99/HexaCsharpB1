@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\mains\\task6-collections\\py_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\mains\\task6-collections\\py_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\task6-collections\\paymentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\task6-collections\\paymentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\assignment\\csharp\\techshop\\techshop\\mains\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DAFA516-A5E8-4996-81F6-C1F861CBA69A}|TechShop\\TechShop.csproj|solutionrelative:techshop\\mains\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PaymentManager.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Task6-Collections\\PaymentManager.cs",
-              "RelativeDocumentMoniker": "TechShop\\Task6-Collections\\PaymentManager.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Task6-Collections\\PaymentManager.cs",
-              "RelativeToolTip": "TechShop\\Task6-Collections\\PaymentManager.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T11:39:43.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PY_Main.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Mains\\Task6-Collections\\PY_Main.cs",
-              "RelativeDocumentMoniker": "TechShop\\Mains\\Task6-Collections\\PY_Main.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Mains\\Task6-Collections\\PY_Main.cs*",
-              "RelativeToolTip": "TechShop\\Mains\\Task6-Collections\\PY_Main.cs*",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAUwCAAAAAZAAAAAAAAAA==",
+              "Title": "DatabaseConnector.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Mains\\DatabaseConnector.cs",
+              "RelativeDocumentMoniker": "TechShop\\Mains\\DatabaseConnector.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\Assignment\\CSharp\\TechShop\\TechShop\\Mains\\DatabaseConnector.cs",
+              "RelativeToolTip": "TechShop\\Mains\\DatabaseConnector.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T11:39:22.121Z",
+              "WhenOpened": "2025-04-08T11:49:08.388Z",
               "EditorCaption": ""
             }
           ]

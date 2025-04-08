@@ -13,7 +13,7 @@ namespace TechShop.DataBase.Task6
         public static void GenerateSalesReportByCategory()
         {
             SqlConnection con = DatabaseConnector.getConnection();
-            string query = "SELECT p.category, SUM(od.Quantity * p.Price) AS TotalEarnings FROM OrderDetails od JOIN Products p ON od.ProductID = p.ProductID GROUP BY p.category";
+            string query = "select p.category, sum(od.Quantity * p.Price) as TotalEarnings from OrderDetails od join Products p on od.ProductID = p.ProductID group by p.category";
             DatabaseConnector.cmd = new SqlCommand(query, DatabaseConnector.con);
             DatabaseConnector.dr = DatabaseConnector.cmd.ExecuteReader();
 

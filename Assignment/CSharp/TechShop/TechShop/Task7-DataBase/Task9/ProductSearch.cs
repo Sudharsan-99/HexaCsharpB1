@@ -23,7 +23,7 @@ namespace TechShop.DataBase.Task9
             {
                 Console.Write("Enter product name : ");
                 string name = Console.ReadLine();
-                query = "SELECT * FROM Products WHERE ProductName = @name";
+                query = "select * from Products where ProductName = @name";
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@name",name);
             }
@@ -32,7 +32,7 @@ namespace TechShop.DataBase.Task9
                 Console.Write("Enter category: ");
                 Console.WriteLine("Available Categories: Computing Devices, Wearable Tech, HeadSet, Entertainment, Accessories, Virtual Reality, Lighting");
                 string category = Console.ReadLine();
-                query = "SELECT * FROM Products WHERE Category = @category";
+                query = "select * from Products where Category = @category";
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@category", category);
             }
@@ -69,7 +69,7 @@ namespace TechShop.DataBase.Task9
                     Console.Write("Enter category for recommendations: ");
                     string catRec = Console.ReadLine();
 
-                    string recQuery = "SELECT  * FROM Products WHERE Category = @catRec";
+                    string recQuery = "select  * from Products WHERE Category = @catRec";
                     SqlCommand recCmd = new SqlCommand(recQuery, con);
                     recCmd.Parameters.AddWithValue("@catRec", catRec);
 

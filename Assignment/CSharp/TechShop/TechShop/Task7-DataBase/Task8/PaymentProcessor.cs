@@ -14,7 +14,7 @@ namespace TechShop.DataBase.Task8
             int orderId = Convert.ToInt32(Console.ReadLine());
 
             // Check if Order Exists
-            string checkQuery = "SELECT COUNT(*) FROM OrderDetails WHERE OrderID = @orderId";
+            string checkQuery = "select count(*) from OrderDetails where OrderID = @orderId";
             SqlCommand checkCmd = new SqlCommand(checkQuery, con);
             checkCmd.Parameters.AddWithValue("@orderId", orderId);
 
@@ -26,7 +26,7 @@ namespace TechShop.DataBase.Task8
             }
 
             // Check if already paid
-            string statusQuery = "SELECT PaymentStatus FROM OrderDetails WHERE OrderID = @orderId";
+            string statusQuery = "select PaymentStatus FROM OrderDetails where OrderID = @orderId";
             SqlCommand statusCmd = new SqlCommand(statusQuery, con);
             statusCmd.Parameters.AddWithValue("@orderId", orderId);
 
@@ -43,7 +43,7 @@ namespace TechShop.DataBase.Task8
             Console.Write("Enter Payment Method (e.g., Card/UPI/Cash): ");
             string method = Console.ReadLine();
 
-            string updateQuery = "UPDATE OrderDetails SET AmountPaid = @amountPaid, PaymentStatus = 'Completed' WHERE OrderID = @orderId";
+            string updateQuery = "update OrderDetails set AmountPaid = @amountPaid, PaymentStatus = 'Completed' WHERE OrderID = @orderId";
 
             SqlCommand updateCmd = new SqlCommand(updateQuery, con);
             updateCmd.Parameters.AddWithValue("@amountPaid", amountPaid);

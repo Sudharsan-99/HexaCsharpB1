@@ -17,7 +17,7 @@ namespace TechShop.DataBase.Task3
             DateTime orderDate = DateTime.Now;
             decimal totalAmount = 0;
 
-            string insertOrderQuery = "INSERT INTO Orders (CustomerID, OrderDate, TotalAmount)VALUES (@customerId, @orderDate, @totalAmount)";
+            string insertOrderQuery = "insert into Orders (CustomerID, OrderDate, TotalAmount)VALUES (@customerId, @orderDate, @totalAmount)";
             SqlCommand insertOrderCmd = new SqlCommand(insertOrderQuery, con);
             insertOrderCmd.Parameters.AddWithValue("@customerId", customerId);
             insertOrderCmd.Parameters.AddWithValue("@orderDate", orderDate);
@@ -38,7 +38,7 @@ namespace TechShop.DataBase.Task3
                 int quantity = Convert.ToInt32(Console.ReadLine());
 
                 // Get product price
-                string getPriceQuery = "SELECT Price FROM Products WHERE ProductID = @productId";
+                string getPriceQuery = "select Price from Products where ProductID = @productId";
                 SqlCommand priceCmd = new SqlCommand(getPriceQuery, con);
                 priceCmd.Parameters.AddWithValue("@productId", productId);
                 decimal price = (decimal)priceCmd.ExecuteScalar();
@@ -48,7 +48,7 @@ namespace TechShop.DataBase.Task3
                 totalAmount += subtotal;
 
                 // Insert into OrderDetails
-                string insertDetailQuery = "INSERT INTO OrderDetails (OrderID, ProductID, Quantity) VALUES (@orderId, @productId,@quantity)";
+                string insertDetailQuery = "insert into OrderDetails (OrderID, ProductID, Quantity) values (@orderId, @productId,@quantity)";
                 SqlCommand detailCmd = new SqlCommand(insertDetailQuery, con);
                 detailCmd.Parameters.AddWithValue("@orderId", orderId);
                 detailCmd.Parameters.AddWithValue("@productId", productId);
@@ -56,7 +56,7 @@ namespace TechShop.DataBase.Task3
                 detailCmd.ExecuteNonQuery();
 
                 // Update Inventory
-                string updateInventoryQuery = "UPDATE Inventory SET QuantityInStock = QuantityInStock - @quantity WHERE ProductID = @productId";
+                string updateInventoryQuery = "update Inventory set QuantityInStock = QuantityInStock - @quantity WHERE ProductID = @productId";
                 SqlCommand invCmd = new SqlCommand(updateInventoryQuery, con);
                 invCmd.Parameters.AddWithValue("@quantity", quantity);
                 invCmd.Parameters.AddWithValue("@productId", productId);
@@ -71,7 +71,7 @@ namespace TechShop.DataBase.Task3
             }
 
             // Update total in order
-            string updateTotalQuery = "UPDATE Orders SET TotalAmount = @total WHERE OrderID = @orderId";
+            string updateTotalQuery = "update Orders SET TotalAmount = @total WHERE OrderID = @orderId";
             SqlCommand updateCmd = new SqlCommand(updateTotalQuery, con);
             updateCmd.Parameters.AddWithValue("@total", totalAmount);
             updateCmd.Parameters.AddWithValue("@orderId", orderId);

@@ -48,7 +48,7 @@ namespace TechShop.DataBase.Task7
                 return;
             }
 
-            string query = $"UPDATE Customers SET {field} = @newValue WHERE CustomerID =@customerId";
+            string query = $"update Customers set {field} = @newValue where CustomerID =@customerId";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@newValue", newValue);
             cmd.Parameters.AddWithValue("@customerId", customerId);

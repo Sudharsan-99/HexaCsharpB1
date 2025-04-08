@@ -20,8 +20,8 @@ namespace TechShop.DataBase.Task5
             Console.Write("Enter Quantity In Stock: ");
             int quantity = Convert.ToInt32(Console.ReadLine());
 
-            string query = "INSERT INTO Inventory (ProductID, QuantityInStock, LastStockUpdate) " +
-                           "VALUES (@ProductID, @QuantityInStock, @LastStockUpdate)";
+            string query = "insert into Inventory (ProductID, QuantityInStock, LastStockUpdate) " +
+                           "values (@ProductID, @QuantityInStock, @LastStockUpdate)";
 
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@ProductID", productId);
@@ -43,8 +43,8 @@ namespace TechShop.DataBase.Task5
             Console.Write("Enter New Quantity In Stock: ");
             int newQuantity = Convert.ToInt32(Console.ReadLine());
 
-            string query = "UPDATE Inventory SET QuantityInStock = @QuantityInStock, LastStockUpdate = @LastStockUpdate " +
-                           "WHERE ProductID = @ProductID";
+            string query = "update Inventory set QuantityInStock = @QuantityInStock, LastStockUpdate = @LastStockUpdate " +
+                           "where ProductID = @ProductID";
 
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@ProductID", productId);
@@ -62,7 +62,7 @@ namespace TechShop.DataBase.Task5
             Console.Write("Enter Product ID to discontinue: ");
             int productId = Convert.ToInt32(Console.ReadLine());
 
-            string query = "DELETE FROM Inventory WHERE ProductID = @ProductID";
+            string query = "delete from Inventory where ProductID = @ProductID";
 
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@ProductID", productId);

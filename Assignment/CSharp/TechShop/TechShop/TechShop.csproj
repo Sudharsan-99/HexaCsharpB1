@@ -12,6 +12,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="DATABASE Output\TASK9\" />
+    <Folder Include="DATABASE Output\TASK8\" />
+    <Folder Include="DATABASE Output\TASK7\" />
+    <Folder Include="DATABASE Output\TASK6\" />
+    <Folder Include="DATABASE Output\TASK4\" />
+    <Folder Include="DATABASE Output\TASK3\" />
+    <Folder Include="DATABASE Output\TASK2\" />
+    <Folder Include="DATABASE Output\TASK1\" />
+    <Folder Include="DATABASE Output\TASK5\add\" />
+    <Folder Include="DATABASE Output\TASK5\delete\" />
+    <Folder Include="DATABASE Output\TASK5\update\" />
     <Folder Include="Mains\Task4\Output\" />
     <Folder Include="Mains\Task6-Collections\InventoryOutput\" />
     <Folder Include="Mains\Task6-Collections\PaymentOutput\" />

@@ -28,7 +28,7 @@ namespace TechShop.DataBase.Task2
             category=Console.ReadLine();
 
             // Step 1: Check if product already exists (by ProductName)
-            string checkQuery = "SELECT COUNT(*) FROM Products WHERE ProductName = @ProductName";
+            string checkQuery = "select count(*) from products where ProductName = @ProductName";
             SqlCommand checkCmd = new SqlCommand(checkQuery, con);
             checkCmd.Parameters.AddWithValue("@ProductName", ProductName);
             int count = (int)checkCmd.ExecuteScalar();
@@ -62,7 +62,7 @@ namespace TechShop.DataBase.Task2
             SqlConnection con = DatabaseConnector.getConnection();
             Console.Write("Enter the ProductID that need to be Updated");
             int ProductID = Convert.ToInt32(Console.ReadLine());
-            string query = "UPDATE Products SET ProductName = @name, Description = @desc, Price = @price,category = @category WHERE ProductID = @ProductID";
+            string query = "update products set ProductName = @name, Description = @desc, Price = @price,category = @category WHERE ProductID = @ProductID";
             string name, desc, price, category;
             Console.Write("Enter The ProductName = ");
             name = Console.ReadLine();
