@@ -7,6 +7,7 @@ using TechShop.Exceptions;
 
 namespace TechShop.Collections
 {
+    //Task 2 Managing Orders List:
     public class OrderManager
     {
         private List<Orders> _orders = new List<Orders>();
@@ -107,7 +108,7 @@ namespace TechShop.Collections
             return null;
         }
 
-
+        //bubble sorting is used
         public void SortOrdersByDateAscending()
         {
             for (int i = 0; i < _orders.Count - 1; i++)
@@ -131,7 +132,7 @@ namespace TechShop.Collections
             }
         }
 
-
+        //Bubble sorting is used
         public void SortOrdersByDateDescending()
         {
             for (int i = 0; i < _orders.Count - 1; i++)

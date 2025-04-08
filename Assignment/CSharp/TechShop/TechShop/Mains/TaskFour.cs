@@ -51,6 +51,7 @@ namespace TechShop.Mains
                         Customers customer = new Customers(customerId, fname, lname, email, phone, address);
                         customers.Add(customer);
                         Console.WriteLine("Customer added successfully.");
+                        Console.WriteLine("----------------");
                         break;
 
                     case "2":
@@ -67,6 +68,7 @@ namespace TechShop.Mains
                         Products product = new Products(pid, pname, desc, price, stock);
                         products.Add(product);
                         Console.WriteLine("Product added.");
+                        Console.WriteLine("----------------");
                         break;
 
                     case "3":
@@ -95,10 +97,12 @@ namespace TechShop.Mains
                         {
                             inventories.Add(new Inventory(inventories.Count + 1, foundProduct, qty));
                             Console.WriteLine("Inventory updated.");
+                            Console.WriteLine("----------------");
                         }
                         else
                         {
                             Console.WriteLine("Invalid Product ID.");
+                            Console.WriteLine("----------------");
                         }
                         break;
 
@@ -106,6 +110,7 @@ namespace TechShop.Mains
                         if (customers.Count == 0 || products.Count == 0)
                         {
                             Console.WriteLine("Add at least one customer and one product first.");
+                            Console.WriteLine("----------------");
                             break;
                         }
 
@@ -180,6 +185,7 @@ namespace TechShop.Mains
                         order.CalculateTotalAmount();
                         orders.Add(order);
                         Console.WriteLine("Order placed.");
+                        Console.WriteLine("-------------------------");
                         break;
 
                     case "5":
@@ -222,6 +228,7 @@ namespace TechShop.Mains
                         else
                         {
                             Console.WriteLine("Order not found.");
+                            Console.WriteLine("------------------------------");
                         }
                         break;
 

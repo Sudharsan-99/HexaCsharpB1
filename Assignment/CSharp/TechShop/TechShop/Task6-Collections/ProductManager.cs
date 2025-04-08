@@ -7,6 +7,7 @@ using TechShop.Exceptions;
 
 namespace TechShop.Collections
 {
+    //TASK 1 Managing Products Lists
     public class ProductManager
     {
         private List<Products> _products = new List<Products>();
