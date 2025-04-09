@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CodingChallenge\\CSharp\\CareerHub\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF36FC6F-0488-4EB6-895E-81B2A6A26AED}|CareerHub\\CareerHub.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\codingchallenge\\csharp\\careerhub\\careerhub\\task2\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF36FC6F-0488-4EB6-895E-81B2A6A26AED}|CareerHub\\CareerHub.csproj|solutionrelative:careerhub\\task2\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataBaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CodingChallenge\\CSharp\\CareerHub\\CareerHub\\Task2\\DataBaseManager.cs",
+              "RelativeDocumentMoniker": "CareerHub\\Task2\\DataBaseManager.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CodingChallenge\\CSharp\\CareerHub\\CareerHub\\Task2\\DataBaseManager.cs",
+              "RelativeToolTip": "CareerHub\\Task2\\DataBaseManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T10:36:14.019Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
