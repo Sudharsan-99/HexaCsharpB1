@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerHub", "CareerHub\CareerHub.csproj", "{FF36FC6F-0488-4EB6-895E-81B2A6A26AED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF36FC6F-0488-4EB6-895E-81B2A6A26AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF36FC6F-0488-4EB6-895E-81B2A6A26AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF36FC6F-0488-4EB6-895E-81B2A6A26AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF36FC6F-0488-4EB6-895E-81B2A6A26AED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6B7C6D8-AA30-4CFF-A048-69AAF808CB53}
+	EndGlobalSection
+EndGlobal

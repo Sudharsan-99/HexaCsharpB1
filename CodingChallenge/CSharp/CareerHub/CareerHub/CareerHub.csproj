@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Task2\Output\nine\**" />
+    <EmbeddedResource Remove="Task2\Output\nine\**" />
+    <None Remove="Task2\Output\nine\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Exceptions\Output\1\" />
+    <Folder Include="Exceptions\Output\2\" />
+    <Folder Include="Exceptions\Output\3\" />
+    <Folder Include="Exceptions\Output\4\" />
+    <Folder Include="Exceptions\Output\5\" />
+    <Folder Include="Task2\Output\four\" />
+    <Folder Include="Task2\Output\five\" />
+    <Folder Include="Task2\Output\eight\" />
+    <Folder Include="Task2\Output\two\" />
+    <Folder Include="Task2\Output\seven\" />
+    <Folder Include="Task2\Output\six\" />
+    <Folder Include="Task2\Output\three\" />
+    <Folder Include="Task2\Output\one\" />
+    <Folder Include="Task4Outputs\four\" />
+    <Folder Include="Task4Outputs\five\" />
+    <Folder Include="Task4Outputs\three\" />
+    <Folder Include="Task4Outputs\two\" />
+    <Folder Include="Task4Outputs\one\" />
+  </ItemGroup>
+
+</Project>
