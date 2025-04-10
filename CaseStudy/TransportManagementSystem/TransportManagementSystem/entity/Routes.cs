@@ -36,5 +36,13 @@ namespace TransportManagementSystem.entity
             this.EndDestination = EndDestination;
             Distance = distance;
         }
+
+        public Routes(int routeId, string startDestination,string endDestination,decimal distance)
+        {
+            RouteID= routeId;
+            StartDestination = startDestination;
+            EndDestination = endDestination;
+            Distance = distance;
+        }
     }
 }

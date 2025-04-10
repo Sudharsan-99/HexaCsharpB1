@@ -16,9 +16,9 @@ namespace TransportManagementSystem.entity
         private string _status;
         private string _tripType;
         private int _maxPassengers;
-        private int _driverID;
+        private int? _driverID;
 
-        private string[] AllowedStatuses = { "Available", "In Service", "Out of Service" };
+        private string[] AllowedStatuses = {"Scheduled","In Progress","Completed","Cancelled" };
         private string[] AllowedTripStatus = { "Freight", "Passenger" };
 
         public int TripID
@@ -69,7 +69,7 @@ namespace TransportManagementSystem.entity
             {
                 if (!(AllowedTripStatus.Contains(value)))
                 {
-                    throw new ArgumentException("Error--The Status Does not Match ! \n Allowed status are \n1.Available,\n2.In Service,\n3.Out of Service");
+                    throw new ArgumentException("Error--The Status Does not Match ! \n Allowed status are \n1.Freight,\n2.Passenger");
                 }
                 _tripType = value; 
             }
@@ -82,31 +82,23 @@ namespace TransportManagementSystem.entity
         }
         public int DriverID
         {
-            get { return _driverID; }
+            get { return (int)_driverID; }
             set { _driverID = value; }
         }
 
+        public Trips(int tripId, int vehicleId, int routeId, int driverId, DateTime departureDate, DateTime arrivalDate, string status)
+        {
+            TripID = tripId;
+            VehicleID = vehicleId;
+            RouteID = routeId;
+            DriverID = driverId;
+            DepartureDate = departureDate;
+            ArrivalDate = arrivalDate;
+            Status = status;
+        }
         public Trips(int tripID, int vehicleID, int routeID, DateTime departureDate, DateTime arrivalDate,
                     string status, string tripType, int maxPassengers)
         {
-            if (tripID < 0)
-                throw new ArgumentException("Trip ID must be non-negative.");
-            if (vehicleID <= 0)
-                throw new ArgumentException("Vehicle ID must be a positive number.");
-            if (routeID <= 0)
-                throw new ArgumentException("Route ID must be a positive number.");
-
-            if (departureDate >= arrivalDate)
-                throw new ArgumentException("Arrival date must be later than departure date.");
-
-            if (!Array.Exists(AllowedStatuses, s => s.Equals(status, StringComparison.OrdinalIgnoreCase)))
-                throw new ArgumentException($"Invalid status. Allowed values: {string.Join(", ", AllowedStatuses)}");
-
-            if (!Array.Exists(AllowedTripStatus, t => t.Equals(tripType, StringComparison.OrdinalIgnoreCase)))
-                throw new ArgumentException($"Invalid trip type. Allowed values: {string.Join(", ", AllowedTripStatus)}");
-
-            if (maxPassengers < 0)
-                throw new ArgumentException("MaxPassengers cannot be negative.");
 
             TripID = tripID;
             VehicleID = vehicleID;
@@ -116,6 +108,11 @@ namespace TransportManagementSystem.entity
             Status = status;
             TripType = tripType;
             MaxPassengers = maxPassengers;
+        }
+
+        public override string ToString()
+        {
+            return $"TripID: {TripID}, VehicleID: {VehicleID}, RouteID: {RouteID}, DriverID: {(DriverID)}, Departure: {DepartureDate}, Arrival: {ArrivalDate}, Status: {Status}";
         }
     }
 }

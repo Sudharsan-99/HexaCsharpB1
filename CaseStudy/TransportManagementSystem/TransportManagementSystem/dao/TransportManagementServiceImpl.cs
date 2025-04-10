@@ -12,6 +12,7 @@ namespace TransportManagementSystem.dao
 {
     public class TransportManagementServiceImpl : ITransportManagementService
     {
+        //1.
         public bool addVehicle(Vehicles vehicles)
         {
             try
@@ -33,6 +34,7 @@ namespace TransportManagementSystem.dao
             }
         }
 
+        //2.
         public bool updateVehicle(Vehicles vehicle) 
         {
             try
@@ -64,6 +66,7 @@ namespace TransportManagementSystem.dao
             }
         }
 
+        //3.
         public bool deleteVehicle(int vehicleId)
         {
             try
@@ -91,13 +94,14 @@ namespace TransportManagementSystem.dao
             }
         }
 
+        //4.
         public bool scheduleTrip(int vehicleId, int driverId, int routeId, string departureDate, string arrivalDate)
         {
             try
             {
                 DateTime Arrivaldate = Convert.ToDateTime(arrivalDate);
                 DateTime Departuredate = Convert.ToDateTime(departureDate);
-                if (Arrivaldate > Departuredate)
+                if (Departuredate>Arrivaldate)
                 {
                     throw new ArgumentException("Departure date must be earlier than arrival date.");
                 }
@@ -128,6 +132,7 @@ namespace TransportManagementSystem.dao
             }
         }
 
+        //5.
         public bool cancelTrip(int tripId)
         {
             try
@@ -148,6 +153,7 @@ namespace TransportManagementSystem.dao
 
         }
 
+        //6.
         public bool bookTrip(int tripId, int passengerId, string bookingDate)
         {
             try
@@ -188,6 +194,7 @@ namespace TransportManagementSystem.dao
             }
         }
 
+        //7.
         public bool cancelBooking(int bookingId)
         {
             try
@@ -218,6 +225,7 @@ namespace TransportManagementSystem.dao
             }
         }
 
+        //8.
         public bool allocateDriver(int tripId, int driverId)
         {
             try
@@ -267,13 +275,13 @@ namespace TransportManagementSystem.dao
                 updateDriverCmd.Parameters.AddWithValue("@driverId", driverId);
                 updateDriverCmd.ExecuteNonQuery();
 
-                Console.WriteLine("Driver allocated successfully.");
                 return updatedTrip > 0;
             }
             catch (Exception ex) { Console.WriteLine("Error--"+ex.Message);return false; }
 
         }
 
+        //9.
         public bool deallocateDriver(int tripId)
         {
             try
@@ -320,7 +328,7 @@ namespace TransportManagementSystem.dao
             }
         }
 
-
+        //10.
         public List<Bookings> getBookingsByPassenger(int passengerId)
         {
             List<Bookings> bookings = new List<Bookings>();
@@ -350,6 +358,7 @@ namespace TransportManagementSystem.dao
             return bookings; 
         }
 
+        //11.
         public List<Bookings> getBookingsByTrip(int tripId)
         {
             List<Bookings> bookings = new List<Bookings>();
@@ -381,7 +390,7 @@ namespace TransportManagementSystem.dao
 
             return bookings;
         }
-
+        //12.
         public List<Drivers> getAvailableDrivers()
         {
             List<Drivers> availableDrivers = new List<Drivers>();
@@ -411,6 +420,139 @@ namespace TransportManagementSystem.dao
                 Console.WriteLine("Error retrieving available drivers: " + ex.Message);
             }
             return availableDrivers;
+        }
+
+
+        public List<Vehicles> getAllVehicles()
+        {
+            List<Vehicles> vehiclesList = new List<Vehicles>();
+
+            try
+            {
+                DBConnection.connection = DBConnection.getConnection();
+                string query = "SELECT * FROM Vehicles";
+                SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int vehicleId = (int)reader["VehicleID"];
+                    string model = reader["Model"].ToString();
+                    decimal capacity = Convert.ToDecimal(reader["Capacity"]);
+                    string type = reader["Type"].ToString();
+                    string status = reader["Status"].ToString();
+
+                    Vehicles vehicle = new Vehicles(vehicleId, model, capacity, type, status);
+                    vehiclesList.Add(vehicle);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("❌ Error retrieving vehicles: " + ex.Message);
+            }
+
+            return vehiclesList;
+        }
+
+        public List<Routes> getAllRoutes()
+        {
+            List<Routes> routes = new List<Routes>();
+
+            try
+            {
+                DBConnection.connection = DBConnection.getConnection();
+                string query = "SELECT * FROM Routes";
+                SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int routeId = (int)reader["RouteID"];
+                    string startDestination = reader["StartDestination"].ToString();
+                    string endDestination = reader["EndDestination"].ToString();
+                    decimal distance = (decimal)reader["Distance"];
+
+                    Routes route = new Routes(routeId, startDestination, endDestination, distance);
+                    routes.Add(route);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("❌ Error fetching routes: " + ex.Message);
+            }
+
+            return routes;
+        }
+
+        public List<Trips> getAllTrips()
+        {
+            List<Trips> tripList = new List<Trips>();
+            try
+            {
+                DBConnection.connection = DBConnection.getConnection();
+                string query = "SELECT * FROM Trips";
+                SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int tripId = (int)reader["TripID"];
+                    int vehicleId = (int)reader["VehicleID"];
+                    int routeId = (int)reader["RouteID"];
+                    int? driverId;
+
+                    if (reader["DriverID"] == DBNull.Value)
+                    {
+                        driverId = null;
+                    }
+                    else
+                    {
+                        driverId = Convert.ToInt32(reader["DriverID"]);
+                    }
+
+                    DateTime departureDate = (DateTime)reader["DepartureDate"];
+                    DateTime arrivalDate = (DateTime)reader["ArrivalDate"];
+                    string status = reader["Status"].ToString();
+
+                    Trips trip = new Trips(tripId, vehicleId, routeId, (int)driverId, departureDate, arrivalDate, status);
+                    tripList.Add(trip);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("❌ Error fetching trips: " + ex.Message);
+            }
+            return tripList;
+        }
+        public List<Bookings> getAllBookings()
+        {
+            List<Bookings> bookingList = new List<Bookings>();
+            try
+            {
+                DBConnection.connection = DBConnection.getConnection();
+                string query = "SELECT * FROM Bookings";
+                SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int bookingId = Convert.ToInt32(reader["BookingID"]);
+                    int tripId = Convert.ToInt32(reader["TripID"]);
+                    int passengerId = Convert.ToInt32(reader["PassengerID"]);
+                    DateTime bookingDate = Convert.ToDateTime(reader["BookingDate"]);
+                    string status = reader["Status"].ToString();
+
+                    Bookings booking = new Bookings(bookingId, tripId, passengerId, bookingDate, status);
+                    bookingList.Add(booking);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error retrieving bookings: " + ex.Message);
+            }
+
+            return bookingList;
         }
 
 

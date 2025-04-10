@@ -11,4 +11,9 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Outputs\Console\" />
+    <Folder Include="Outputs\Sql\" />
+  </ItemGroup>
+
 </Project>

@@ -64,5 +64,14 @@ namespace TransportManagementSystem.entity
             Type = type;
             Status = status;
         }
+
+        public Vehicles(int vehicleID, string model, decimal capacity, string type, string status)
+        {
+            VehicleID = vehicleID;
+            Model = model;
+            Capacity = capacity;
+            Type = type;
+            Status = status;
+        }
     }
 }

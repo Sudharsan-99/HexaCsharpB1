@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|solutionrelative:transportmanagementsystem\\main\\transportmanagementapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\casestudy\\transportmanagementsystem\\transportmanagementsystem\\dao\\transportmanagementserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|solutionrelative:transportmanagementsystem\\dao\\transportmanagementserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\casestudy\\transportmanagementsystem\\transportmanagementsystem\\dao\\itransportmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|solutionrelative:transportmanagementsystem\\dao\\itransportmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\casestudy\\transportmanagementsystem\\transportmanagementsystem\\entity\\trips.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|solutionrelative:transportmanagementsystem\\entity\\trips.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Trips.cs",
+              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\entity\\Trips.cs",
+              "RelativeDocumentMoniker": "TransportManagementSystem\\entity\\Trips.cs",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\entity\\Trips.cs",
+              "RelativeToolTip": "TransportManagementSystem\\entity\\Trips.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T10:47:49.599Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TransportManagementApp.cs",
               "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\MAIN\\TransportManagementApp.cs",
               "RelativeDocumentMoniker": "TransportManagementSystem\\MAIN\\TransportManagementApp.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\MAIN\\TransportManagementApp.cs*",
-              "RelativeToolTip": "TransportManagementSystem\\MAIN\\TransportManagementApp.cs*",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwCAAAAAzAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\MAIN\\TransportManagementApp.cs",
+              "RelativeToolTip": "TransportManagementSystem\\MAIN\\TransportManagementApp.cs",
+              "ViewState": "AgIAABkAAAAALzMzMzPzvxoAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:11:47.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ITransportManagementService.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\dao\\ITransportManagementService.cs",
-              "RelativeDocumentMoniker": "TransportManagementSystem\\dao\\ITransportManagementService.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\dao\\ITransportManagementService.cs*",
-              "RelativeToolTip": "TransportManagementSystem\\dao\\ITransportManagementService.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T04:54:38.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TransportManagementServiceImpl.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\dao\\TransportManagementServiceImpl.cs",
-              "RelativeDocumentMoniker": "TransportManagementSystem\\dao\\TransportManagementServiceImpl.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\dao\\TransportManagementServiceImpl.cs*",
-              "RelativeToolTip": "TransportManagementSystem\\dao\\TransportManagementServiceImpl.cs*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAAF0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T04:54:32.784Z",
+              "WhenOpened": "2025-04-10T08:33:15.343Z",
               "EditorCaption": ""
             }
           ]
