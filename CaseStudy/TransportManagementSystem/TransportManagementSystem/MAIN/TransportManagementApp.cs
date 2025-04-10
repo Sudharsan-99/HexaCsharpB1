@@ -67,7 +67,7 @@ namespace TransportManagementSystem.MAIN
                                 {
                                     Console.WriteLine($"ID: {v.VehicleID}, Model: {v.Model}, Capacity: {v.Capacity}, Type: {v.Type}, Status: {v.Status}");
                                 }
-                                Console.Write("\nEnter the VehicleID to update: ");
+                                Console.Write("Enter the VehicleID to update: ");
                                 int vehicleId1 = Convert.ToInt32(Console.ReadLine());
 
                                 Console.Write("Enter new Model: ");
@@ -247,7 +247,7 @@ namespace TransportManagementSystem.MAIN
                         case "7":
                             try
                             {
-                                List<Bookings> bookings = service.getAllBookings(); // You must implement this if not done
+                                List<Bookings> bookings = service.getAllBookings(); 
                                 Console.WriteLine("Current Bookings:");
                                 foreach (var booking in bookings)
                                 {
@@ -305,7 +305,7 @@ namespace TransportManagementSystem.MAIN
                             }
                             catch (Exception ex)
                             {
-                                Console.WriteLine("❌ Unexpected error: " + ex.Message);
+                                Console.WriteLine("Unexpected error: " + ex.Message);
                             }
                             break;
                         case "9":

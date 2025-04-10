@@ -336,7 +336,7 @@ namespace TransportManagementSystem.dao
             try
             {
                 DBConnection.connection = DBConnection.getConnection();
-                string query = "SELECT * FROM Bookings WHERE PassengerID = @passengerId";
+                string query = "select * from Bookings WHERE PassengerID = @passengerId";
                 SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
                 cmd.Parameters.AddWithValue("@passengerId", passengerId);
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -366,7 +366,7 @@ namespace TransportManagementSystem.dao
             try
             {
                 DBConnection.connection = DBConnection.getConnection();
-                string query = "SELECT * FROM Bookings WHERE TripID = @TripID";
+                string query = "select * from Bookings WHERE TripID = @TripID";
                 SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
                 cmd.Parameters.AddWithValue("@TripID", tripId);
 
@@ -423,6 +423,7 @@ namespace TransportManagementSystem.dao
         }
 
 
+        //My Own For Better Displaying Purpose
         public List<Vehicles> getAllVehicles()
         {
             List<Vehicles> vehiclesList = new List<Vehicles>();
@@ -430,7 +431,7 @@ namespace TransportManagementSystem.dao
             try
             {
                 DBConnection.connection = DBConnection.getConnection();
-                string query = "SELECT * FROM Vehicles";
+                string query = "select * FROM Vehicles";
                 SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
                 SqlDataReader reader = cmd.ExecuteReader();
 
@@ -448,7 +449,7 @@ namespace TransportManagementSystem.dao
             }
             catch (Exception ex)
             {
-                Console.WriteLine("❌ Error retrieving vehicles: " + ex.Message);
+                Console.WriteLine("Error retrieving vehicles: " + ex.Message);
             }
 
             return vehiclesList;
@@ -461,7 +462,7 @@ namespace TransportManagementSystem.dao
             try
             {
                 DBConnection.connection = DBConnection.getConnection();
-                string query = "SELECT * FROM Routes";
+                string query = "select * FROM Routes";
                 SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
                 SqlDataReader reader = cmd.ExecuteReader();
 
@@ -478,7 +479,7 @@ namespace TransportManagementSystem.dao
             }
             catch (Exception ex)
             {
-                Console.WriteLine("❌ Error fetching routes: " + ex.Message);
+                Console.WriteLine("Error fetching routes: " + ex.Message);
             }
 
             return routes;
@@ -490,7 +491,7 @@ namespace TransportManagementSystem.dao
             try
             {
                 DBConnection.connection = DBConnection.getConnection();
-                string query = "SELECT * FROM Trips";
+                string query = "select * FROM Trips";
                 SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
                 SqlDataReader reader = cmd.ExecuteReader();
 
@@ -520,7 +521,7 @@ namespace TransportManagementSystem.dao
             }
             catch (Exception ex)
             {
-                Console.WriteLine("❌ Error fetching trips: " + ex.Message);
+                Console.WriteLine("Error fetching trips: " + ex.Message);
             }
             return tripList;
         }
@@ -530,7 +531,7 @@ namespace TransportManagementSystem.dao
             try
             {
                 DBConnection.connection = DBConnection.getConnection();
-                string query = "SELECT * FROM Bookings";
+                string query = "select * FROM Bookings";
                 SqlCommand cmd = new SqlCommand(query, DBConnection.connection);
                 SqlDataReader reader = cmd.ExecuteReader();
 

@@ -97,8 +97,10 @@ select * from Vehicles
 select * from [Routes]
 select * from Bookings
 select * from Trips
-select * from Passengers
 select * from drivers
+select * from Passengers
+
+
 
 -- Insert Bookings
 INSERT INTO Bookings (TripID, PassengerID, BookingDate, Status)
@@ -106,4 +108,19 @@ VALUES
 (1, 1, '2025-04-01', 'Confirmed'),
 (1, 2, '2025-04-02', 'Cancelled'),
 (1, 1, '2025-04-03', 'Confirmed');
+
+
+insert into Drivers (FirstName, LastName, LicenseNumber, PhoneNumber, Email, Status)values 
+('Ravi','Kumar','TN24567A12','7658903457','ravi@gmail.com','Available');
+
+
+INSERT INTO Drivers (FirstName, LastName, LicenseNumber, PhoneNumber, Email, Status)
+VALUES 
+('Monkey', 'D. Luffy', 'OP123456', '9876543210', 'luffy@onepiece.com', 'Available'),
+('Roronoa', 'Zoro', 'OP654321', '9876501234', 'zoro@onepiece.com', 'Available'),
+('Nami', '', 'OP112233', '9876512345', 'nami@onepiece.com', 'Available'),
+('Usopp', '', 'OP445566', '9876523456', 'usopp@onepiece.com', 'Assigned'),
+('Sanji', 'Vinsmoke', 'OP778899', '9876534567', 'sanji@onepiece.com', 'Available'),
+('Tony Tony', 'Chopper', 'OP334455', '9876545678', 'chopper@onepiece.com', 'Available'),
+('Nico', 'Robin', 'OP998877', '9876556789', 'robin@onepiece.com', 'Available');
 

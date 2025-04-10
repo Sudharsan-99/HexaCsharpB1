@@ -50,7 +50,7 @@ namespace TransportManagementSystem.entity
             get { return _status; }
             set
             {
-                if (!Array.Exists(AllowedStatuses, s => s.Equals(value, StringComparison.OrdinalIgnoreCase)))
+                if (!(AllowedStatuses.Contains(value)))
                     throw new ArgumentException($"Invalid status. Allowed values: {string.Join(", ", AllowedStatuses)}");
                 _status = value;
             }

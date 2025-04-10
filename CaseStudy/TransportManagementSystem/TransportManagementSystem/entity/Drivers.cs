@@ -72,7 +72,7 @@ namespace TransportManagementSystem.entity
             get { return _status; }
             set
             {
-                if (Array.IndexOf(allowedStatuses, value) == -1)
+                if (!(allowedStatuses.Contains(value)))
                     throw new ArgumentException($"Status must be one of the following: {string.Join(", ", allowedStatuses)}");
                 _status = value;
             }

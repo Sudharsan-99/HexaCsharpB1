@@ -39,7 +39,7 @@ namespace TransportManagementSystem.entity
             get { return _gender; }
             set
             {
-                if (!Array.Exists(AllowedGenders, g => g.Equals(value, StringComparison.OrdinalIgnoreCase)))
+                if (!(AllowedGenders.Contains(value)))
                     throw new ArgumentException($"Gender must be one of: {string.Join(", ", AllowedGenders)}");
                 _gender = value;
             }
@@ -61,7 +61,7 @@ namespace TransportManagementSystem.entity
             get { return _email; }
             set
             {
-                if (string.IsNullOrWhiteSpace(value) || !Regex.IsMatch(value, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                if (string.IsNullOrWhiteSpace(value) || !(value.Contains("@")))
                     throw new ArgumentException("Invalid email format.");
                 _email = value;
             }

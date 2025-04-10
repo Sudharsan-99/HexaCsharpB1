@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Outputs\Console\" />
+    <Folder Include="Outputs\Testing\" />
     <Folder Include="Outputs\Sql\" />
   </ItemGroup>
 

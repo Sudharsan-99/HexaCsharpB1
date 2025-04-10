@@ -69,7 +69,7 @@ namespace TransportManagementSystem.entity
             {
                 if (!(AllowedTripStatus.Contains(value)))
                 {
-                    throw new ArgumentException("Error--The Status Does not Match ! \n Allowed status are \n1.Freight,\n2.Passenger");
+                    throw new ArgumentException("Error--The Status Does not Match ! Allowed status are -- \n1.Freight,\n2.Passenger");
                 }
                 _tripType = value; 
             }

@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\casestudy\\transportmanagementsystem\\transportmanagementsystem\\main\\transportmanagementapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|solutionrelative:transportmanagementsystem\\main\\transportmanagementapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|c:\\users\\test\\onedrive\\desktop\\hexacsharp\\casestudy\\transportmanagementsystem\\transportmanagementsystem\\entity\\trips.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B252B8A-6BE0-46C4-9B08-7D568A8E2041}|TransportManagementSystem\\TransportManagementSystem.csproj|solutionrelative:transportmanagementsystem\\entity\\trips.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Trips.cs",
-              "DocumentMoniker": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\entity\\Trips.cs",
-              "RelativeDocumentMoniker": "TransportManagementSystem\\entity\\Trips.cs",
-              "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\entity\\Trips.cs",
-              "RelativeToolTip": "TransportManagementSystem\\entity\\Trips.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T10:47:49.599Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,9 +24,9 @@
               "RelativeDocumentMoniker": "TransportManagementSystem\\MAIN\\TransportManagementApp.cs",
               "ToolTip": "C:\\Users\\test\\OneDrive\\Desktop\\HexaCSharp\\CaseStudy\\TransportManagementSystem\\TransportManagementSystem\\MAIN\\TransportManagementApp.cs",
               "RelativeToolTip": "TransportManagementSystem\\MAIN\\TransportManagementApp.cs",
-              "ViewState": "AgIAABkAAAAALzMzMzPzvxoAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAzczMzMwmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T08:33:15.343Z",
+              "WhenOpened": "2025-04-10T17:43:49.285Z",
               "EditorCaption": ""
             }
           ]
