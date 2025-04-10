@@ -16,6 +16,7 @@ namespace TransportManagementSystem.entity
         private string _status;
         private string _tripType;
         private int _maxPassengers;
+        private int _driverID;
 
         private string[] AllowedStatuses = { "Available", "In Service", "Out of Service" };
         private string[] AllowedTripStatus = { "Freight", "Passenger" };
@@ -78,6 +79,11 @@ namespace TransportManagementSystem.entity
         {
             get { return _maxPassengers; }
             set { _maxPassengers = value; }
+        }
+        public int DriverID
+        {
+            get { return _driverID; }
+            set { _driverID = value; }
         }
 
         public Trips(int tripID, int vehicleID, int routeID, DateTime departureDate, DateTime arrivalDate,

@@ -28,6 +28,7 @@ foreign key (VehicleID) references Vehicles(VehicleID),
 foreign key (RouteID) references [Routes](RouteID)
 );
 
+
 create table Passengers(
 PassengerID int identity(1,1) primary key,
 FirstName varchar(255) not null,
@@ -47,7 +48,20 @@ foreign key (TripID) references Trips(TripID),
 foreign key (PassengerID) references Passengers(PassengerID)
 );
 
+CREATE TABLE Drivers (
+DriverID int Identity(1,1) Primary Key,
+FirstName varchar(255) not null,
+LastName varchar(255) ,
+LicenseNumber varchar(100) unique NOT NULL,
+PhoneNumber varchar(50),
+Email varchar(255) unique,
+[Status] varchar(50) not null default 'Available' CHECK (Status in ('Available', 'Assigned', 'On Leave'))
+);
 
 
 
 select * from Vehicles
+select * from [Routes]
+select * from Bookings
+select * from Trips
+select * from Passengers
