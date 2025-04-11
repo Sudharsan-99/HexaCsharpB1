@@ -10,6 +10,7 @@ namespace TransportManagementSystem.entity
     {
         private static string[] allowedStatuses = { "Available", "Assigned", "On Leave" };
 
+        //Fields
         private int? _driverID;
         private string _firstName;
         private string _lastName;
@@ -17,6 +18,8 @@ namespace TransportManagementSystem.entity
         private string _phoneNumber;
         private string _email;
         private string _status;
+
+        //Properties
         public int DriverID
         {
             get { return (int)_driverID; }
@@ -90,6 +93,7 @@ namespace TransportManagementSystem.entity
             Status = status;
         }
 
+        //Overiding To Display List
         public override string ToString()
         {
             return $"DriverId :{DriverID} , DriverName:{FirstName+" "+LastName} , LicenseNumber:{LicenseNumber} , PhoneNumber:{PhoneNumber} , Email:{Email} , Status :{Status}";

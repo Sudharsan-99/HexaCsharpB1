@@ -8,11 +8,13 @@ namespace TransportManagementSystem.entity
 {
     public class Routes
     {
+        //Fields
         private int _routeID;
         private string _startDestination;
         private string _endDestination;
         private decimal _distance;
 
+        //Properties
         public int RouteID { get { return _routeID; } set { _routeID = value; } }
         public string StartDestination
         {
@@ -30,6 +32,7 @@ namespace TransportManagementSystem.entity
             set { _distance = value; }
         }
 
+        //Constructor
         public Routes(string StartDestination , string EndDestination,decimal distance) 
         {
             this.StartDestination = StartDestination;

@@ -100,7 +100,12 @@ select * from Trips
 select * from drivers
 select * from Passengers
 
-
+INSERT INTO Vehicles (Model, Capacity, Type, Status) VALUES
+('Nissan GTR', 2.50, 'Sport Car', 'Available'),
+('Yamaha VMAX', 0.50, 'Bike', 'Available'),
+('Mini Cooper', 1.20, 'Car', 'Available'),
+('Kawasaki Ninja', 0.45, 'Bike', 'Available'),
+('Boaty McBoatface', 20.00, 'Ship', 'Available');
 
 -- Insert Bookings
 INSERT INTO Bookings (TripID, PassengerID, BookingDate, Status)
@@ -124,3 +129,12 @@ VALUES
 ('Tony Tony', 'Chopper', 'OP334455', '9876545678', 'chopper@onepiece.com', 'Available'),
 ('Nico', 'Robin', 'OP998877', '9876556789', 'robin@onepiece.com', 'Available');
 
+
+
+INSERT INTO Trips (VehicleID, RouteID, DepartureDate, ArrivalDate, [Status], TripType, MaxPassengers)
+VALUES 
+(1, 1, '2025-04-15 08:00:00', '2025-04-15 12:00:00', 'Scheduled', 'Passenger', 40),
+(2, 2, '2025-04-16 09:30:00', '2025-04-16 11:30:00', 'Scheduled', 'Passenger', 4),
+(3, 3, '2025-04-17 07:00:00', '2025-04-17 13:00:00', 'Scheduled', 'Passenger', 50),
+(5, 1, '2025-04-18 10:00:00', '2025-04-18 15:00:00', 'Scheduled', 'Freight', 1),
+(6, 2, '2025-04-19 06:30:00', '2025-04-19 14:00:00', 'Scheduled', 'Freight', 2);

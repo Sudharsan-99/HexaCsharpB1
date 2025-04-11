@@ -8,6 +8,7 @@ namespace TransportManagementSystem.entity
 {
     public class Vehicles
     {
+        //fields
         private int _vehicleID;
         private string _model;
         private decimal _capacity;
@@ -15,6 +16,8 @@ namespace TransportManagementSystem.entity
         private string _status;
 
         private string [] AllowedStatuses = { "Available","On Trip","Maintenance"};
+
+        //Properties
         public int VehicleID
         {
             get { return _vehicleID; }

@@ -9,8 +9,10 @@ namespace TransportManagementSystem.util
 {
     public class DBConnection
     {
+       
         public static SqlConnection connection;
 
+        //Getting Connection From Database
         public static SqlConnection getConnection()
         {
             connection = new SqlConnection("data source = DESKTOP-R2484O8\\SQLEXPRESS;initial catalog = TransportManagementSystem;integrated security = true;");

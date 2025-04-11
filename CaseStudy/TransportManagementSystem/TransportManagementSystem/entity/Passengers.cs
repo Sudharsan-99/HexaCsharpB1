@@ -9,6 +9,8 @@ namespace TransportManagementSystem.entity
 {
     public class Passengers
     {
+
+        //Fields
         private int _passengerID;
         private string _firstName;
         private string _gender;
@@ -17,6 +19,8 @@ namespace TransportManagementSystem.entity
         private string _phoneNumber;
 
         private static string[] AllowedGenders = { "Male", "Female", "Others" };
+
+        //Properties
         public int PassengersID
         {
             get { return _passengerID; }
@@ -78,6 +82,7 @@ namespace TransportManagementSystem.entity
             }
         }
 
+        //COnstructor
         public Passengers(int passengerID, string firstName, string gender, int age, string email, string phoneNumber)
         {
             PassengersID = passengerID;

@@ -10,12 +10,14 @@ namespace TransportManagementSystem.entity
     {
         private string[] AllowedStatuses = { "Confirmed", "Cancelled", "Completed" };
 
+        //fields
         private int _bookingID;
         private int _tripID;
         private int _passengerID;
         private DateTime _bookingDate;
         private string _status;
 
+        //Properties
         public int BookingID
         {
             get { return _bookingID; }
@@ -56,6 +58,7 @@ namespace TransportManagementSystem.entity
             }
         }
 
+        //Constructor
         public Bookings(int bookingID, int tripID, int passengerID, DateTime bookingDate, string status)
         {
             BookingID = bookingID;

@@ -8,6 +8,7 @@ namespace TransportManagementSystem.entity
 {
     public class Trips
     {
+        //Fields
         private int _tripID;
         private int _vehicleID;
         private int _routeID;
@@ -21,6 +22,7 @@ namespace TransportManagementSystem.entity
         private string[] AllowedStatuses = {"Scheduled","In Progress","Completed","Cancelled" };
         private string[] AllowedTripStatus = { "Freight", "Passenger" };
 
+        //Properties
         public int TripID
         {
             get { return _tripID; }
@@ -86,6 +88,7 @@ namespace TransportManagementSystem.entity
             set { _driverID = value; }
         }
 
+        //Constructor
         public Trips(int tripId, int vehicleId, int routeId, int driverId, DateTime departureDate, DateTime arrivalDate, string status)
         {
             TripID = tripId;
@@ -110,6 +113,7 @@ namespace TransportManagementSystem.entity
             MaxPassengers = maxPassengers;
         }
 
+        //Overiding To Display List
         public override string ToString()
         {
             return $"TripID: {TripID}, VehicleID: {VehicleID}, RouteID: {RouteID}, DriverID: {(DriverID)}, Departure: {DepartureDate}, Arrival: {ArrivalDate}, Status: {Status}";
