@@ -416,6 +416,9 @@ namespace TransportManagementSystem.MAIN
                             Console.WriteLine("Exiting");
                             running = false;
                             break;
+                        default:
+                            Console.WriteLine("Enter a Valid CHoice");
+                            break;
                     }
                 }
             }

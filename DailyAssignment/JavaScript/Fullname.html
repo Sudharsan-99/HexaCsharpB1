@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Name Generator</title>
+</head>
+<body>
+
+    <h1>Full Name Generator</h1>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" placeholder="Enter first name"><br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" placeholder="Enter last name"><br><br>
+
+    <button onclick="displayFullName()">Get Full Name</button>
+
+    <p id="result"></p>
+
+    <script>
+    function getFullName(firstName, lastName) {
+      return firstName + " " + lastName;
+    }
+
+    function displayFullName() {
+      const firstName = document.getElementById("firstName").value;
+      const lastName = document.getElementById("lastName").value;
+
+      const fullName = getFullName(firstName, lastName);
+      document.getElementById("result").innerText = "Full Name: " + fullName;
+    }
+    </script>
+
+</body>
+</html>

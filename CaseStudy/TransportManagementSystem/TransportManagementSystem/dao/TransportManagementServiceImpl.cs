@@ -390,6 +390,7 @@ namespace TransportManagementSystem.dao
 
             return bookings;
         }
+
         //12.
         public List<Drivers> getAvailableDrivers()
         {
@@ -515,7 +516,7 @@ namespace TransportManagementSystem.dao
                     DateTime arrivalDate = (DateTime)reader["ArrivalDate"];
                     string status = reader["Status"].ToString();
 
-                    Trips trip = new Trips(tripId, vehicleId, routeId, (int)driverId, departureDate, arrivalDate, status);
+                    Trips trip = new Trips(tripId, vehicleId, routeId, driverId, departureDate, arrivalDate, status);
                     tripList.Add(trip);
                 }
             }
@@ -525,6 +526,7 @@ namespace TransportManagementSystem.dao
             }
             return tripList;
         }
+
         public List<Bookings> getAllBookings()
         {
             List<Bookings> bookingList = new List<Bookings>();

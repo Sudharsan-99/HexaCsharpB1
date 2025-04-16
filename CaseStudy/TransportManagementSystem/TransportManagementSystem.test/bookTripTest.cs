@@ -17,8 +17,8 @@ namespace TransportManagementSystem.test
         {
             // Arrange
             var tester = new TransportManagementServiceImpl();
-            int TripId = 1;
-            int PassengerId = 2; 
+            int TripId = 4;
+            int PassengerId = 4; 
             string bookingDate = "2025-04-10";
 
             //Act 

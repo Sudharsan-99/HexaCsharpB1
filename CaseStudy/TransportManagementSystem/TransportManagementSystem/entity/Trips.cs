@@ -82,14 +82,14 @@ namespace TransportManagementSystem.entity
             get { return _maxPassengers; }
             set { _maxPassengers = value; }
         }
-        public int DriverID
+        public int? DriverID
         {
-            get { return (int)_driverID; }
+            get { return _driverID; }
             set { _driverID = value; }
         }
 
         //Constructor
-        public Trips(int tripId, int vehicleId, int routeId, int driverId, DateTime departureDate, DateTime arrivalDate, string status)
+        public Trips(int tripId, int vehicleId, int routeId, int? driverId, DateTime departureDate, DateTime arrivalDate, string status)
         {
             TripID = tripId;
             VehicleID = vehicleId;
@@ -116,7 +116,7 @@ namespace TransportManagementSystem.entity
         //Overiding To Display List
         public override string ToString()
         {
-            return $"TripID: {TripID}, VehicleID: {VehicleID}, RouteID: {RouteID}, DriverID: {(DriverID)}, Departure: {DepartureDate}, Arrival: {ArrivalDate}, Status: {Status}";
+            return $"TripID: {TripID}, VehicleID: {VehicleID}, RouteID: {RouteID},DriverID: {(DriverID.HasValue ? DriverID.ToString() : "UnAssigned")}, Departure: {DepartureDate}, Arrival: {ArrivalDate}, Status: {Status}";
         }
     }
 }

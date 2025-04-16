@@ -93,12 +93,7 @@ values
 ('Surat', 'Vadodara', 150.20),
 ('Patna', 'Ranchi', 325.60);
 
-select * from Vehicles
-select * from [Routes]
-select * from Bookings
-select * from Trips
-select * from drivers
-select * from Passengers
+
 
 INSERT INTO Vehicles (Model, Capacity, Type, Status) VALUES
 ('Nissan GTR', 2.50, 'Sport Car', 'Available'),
@@ -138,3 +133,20 @@ VALUES
 (3, 3, '2025-04-17 07:00:00', '2025-04-17 13:00:00', 'Scheduled', 'Passenger', 50),
 (5, 1, '2025-04-18 10:00:00', '2025-04-18 15:00:00', 'Scheduled', 'Freight', 1),
 (6, 2, '2025-04-19 06:30:00', '2025-04-19 14:00:00', 'Scheduled', 'Freight', 2);
+
+
+
+INSERT INTO Drivers (FirstName, LastName, LicenseNumber, PhoneNumber, Email, Status)
+VALUES 
+('Shanks', 'RedHair', 'OP456832', '9876543210', 'shanks@onepiece.com', 'Available'),
+('Edward', 'Newgate', 'OP658343', '9876501234', 'Whitebeard@onepiece.com', 'Available'),
+('Marco', 'phoenix', 'OP783455', '9876512345', 'marco@onepiece.com', 'Available'),
+('SogeKing', '', 'OP2564790', '9876523456', 'sogeking@onepiece.com', 'Available');
+
+
+select * from Vehicles
+select * from [Routes]
+select * from Bookings
+select * from Trips
+select * from drivers
+select * from Passengers
